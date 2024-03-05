@@ -1,7 +1,7 @@
 {
-  "name": "Aloompa UI Automation",
+  "name": "Automation Exercise",
   "version": "1.0.0",
-  "description": "Aloompa UI Automation",
+  "description": "Automation Exercise",
   "main": "index.js",
   "scripts": {
     "test": "npx playwright test",

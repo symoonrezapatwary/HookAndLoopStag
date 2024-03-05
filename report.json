@@ -12,12 +12,12 @@
     "preserveOutput": "always",
     "projects": [
       {
-        "outputDir": "D:/AutomationExercise_UI_automation/test-results",
+        "outputDir": "C:/Users/User/Desktop/Automation Exercise UI Automation/test-results",
         "repeatEach": 1,
         "retries": 0,
         "id": "",
         "name": "",
-        "testDir": "D:/AutomationExercise_UI_automation",
+        "testDir": "C:/Users/User/Desktop/Automation Exercise UI Automation",
         "testIgnore": [],
         "testMatch": [
           "AutomationEx.test.ts"
@@ -43,8 +43,8 @@
       "max": 5,
       "threshold": 15000
     },
-    "configFile": "D:\\AutomationExercise_UI_automation\\playwright.config.ts",
-    "rootDir": "D:/AutomationExercise_UI_automation",
+    "configFile": "C:/Users/User/Desktop/Automation Exercise UI Automation\\playwright.config.ts",
+    "rootDir": "C:/Users/User/Desktop/Automation Exercise UI Automation",
     "quiet": false,
     "shard": null,
     "updateSnapshots": "missing",

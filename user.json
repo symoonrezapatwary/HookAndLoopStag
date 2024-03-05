@@ -2,7 +2,7 @@
   "cookies": [],
   "origins": [
     {
-      "origin": "https://dragonflyadmin-dev.loompavision.com",
+      "origin": "https://automationexercise.com",
       "localStorage": [
         {
           "name": "CognitoIdentityServiceProvider.7i1v6vlla15qec7vf1ofpb6lon.LastAuthUser",
