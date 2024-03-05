@@ -1,10 +1,8 @@
 import test, { expect } from "@fixtures/basePages"
-import functions from "@helper-function/functions";
-import BaseFunctions from "base-function/baseFunctions";
-import { readFileSync } from "fs";
-const authFile = 'user.json'
 
-test("001 | Verify the navigation to the URL", async ({ page, AutomationExPage,testData,browser,functions }) => {
+
+
+test("001 | Verify the navigation to the URL", async ({ page, AutomationExPage }) => {
     await test.step('Navigate to the Url', async () => {
         await page.goto('https://automationexercise.com/')
 
