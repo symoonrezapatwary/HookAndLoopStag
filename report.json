@@ -1,0 +1,174 @@
+{
+  "config": {
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {},
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/AutomationExercise_UI_automation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "",
+        "name": "",
+        "testDir": "D:/AutomationExercise_UI_automation",
+        "testIgnore": [],
+        "testMatch": [
+          "AutomationEx.test.ts"
+        ],
+        "timeout": 300000
+      }
+    ],
+    "reporter": [
+      [
+        "json",
+        {
+          "outputFile": "report.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "configFile": "D:\\AutomationExercise_UI_automation\\playwright.config.ts",
+    "rootDir": "D:/AutomationExercise_UI_automation",
+    "quiet": false,
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.29.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "tests\\Automation Exercise\\AutomationEx.test.ts",
+      "file": "tests/Automation Exercise/AutomationEx.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "001 | Verify the navigation to the URL",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 40345,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Navigate to the Url",
+                      "duration": 5051
+                    },
+                    {
+                      "title": "Verify that home page is visible successfully",
+                      "duration": 337
+                    },
+                    {
+                      "title": "Add products to cart",
+                      "duration": 341
+                    },
+                    {
+                      "title": "Click on the cart button",
+                      "duration": 647
+                    },
+                    {
+                      "title": "Click on the cart button",
+                      "duration": 311
+                    },
+                    {
+                      "title": "Click Proceed To Checkout",
+                      "duration": 1629
+                    },
+                    {
+                      "title": "Click 'Register / Login' button",
+                      "duration": 1351
+                    },
+                    {
+                      "title": "Fill all details in Sign up and create account",
+                      "duration": 12089
+                    },
+                    {
+                      "title": "Verify 'ACCOUNT CREATED!' and click 'Continue' button",
+                      "duration": 2376
+                    },
+                    {
+                      "title": "Verify ' Logged in as username' at top",
+                      "duration": 308
+                    },
+                    {
+                      "title": "Click on the cart button",
+                      "duration": 1919
+                    },
+                    {
+                      "title": "Click Proceed To Checkout",
+                      "duration": 2239
+                    },
+                    {
+                      "title": "Verify Address Details and Review Your Order",
+                      "duration": 624
+                    },
+                    {
+                      "title": "Enter description in comment text area and click 'Place Order'",
+                      "duration": 1503
+                    },
+                    {
+                      "title": "Enter payment details: Name on Card, Card Number, CVC, Expiration date",
+                      "duration": 1586
+                    },
+                    {
+                      "title": "Click 'Pay and Confirm Order' button'",
+                      "duration": 2230
+                    },
+                    {
+                      "title": "Verify the success message 'Your order has been placed successfully!'",
+                      "duration": 311
+                    }
+                  ],
+                  "startTime": "2024-03-05T21:25:17.997Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\AutomationExercise_UI_automation\\test-results\\tests-Automation Exercise-AutomationEx-001-Verify-the-navigation-to-the-URL\\test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3b24793047643fa43483-fea7439011cfa12c44d0",
+          "file": "tests/Automation Exercise/AutomationEx.test.ts",
+          "line": 7,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": []
+}
