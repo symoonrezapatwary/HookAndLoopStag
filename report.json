@@ -12,12 +12,64 @@
     "preserveOutput": "always",
     "projects": [
       {
-        "outputDir": "C:/Users/User/Desktop/Automation Exercise UI Automation/test-results",
+        "outputDir": "C:/Users/munna/Documents/GitHub/Automation-ExerciseForKinetik/test-results",
         "repeatEach": 1,
         "retries": 0,
-        "id": "",
-        "name": "",
-        "testDir": "C:/Users/User/Desktop/Automation Exercise UI Automation",
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/munna/Documents/GitHub/Automation-ExerciseForKinetik",
+        "testIgnore": [],
+        "testMatch": [
+          "AutomationEx.test.ts"
+        ],
+        "timeout": 300000
+      },
+      {
+        "outputDir": "C:/Users/munna/Documents/GitHub/Automation-ExerciseForKinetik/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "C:/Users/munna/Documents/GitHub/Automation-ExerciseForKinetik",
+        "testIgnore": [],
+        "testMatch": [
+          "AutomationEx.test.ts"
+        ],
+        "timeout": 300000
+      },
+      {
+        "outputDir": "C:/Users/munna/Documents/GitHub/Automation-ExerciseForKinetik/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "C:/Users/munna/Documents/GitHub/Automation-ExerciseForKinetik",
+        "testIgnore": [],
+        "testMatch": [
+          "AutomationEx.test.ts"
+        ],
+        "timeout": 300000
+      },
+      {
+        "outputDir": "C:/Users/munna/Documents/GitHub/Automation-ExerciseForKinetik/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "Mobile Chrome",
+        "name": "Mobile Chrome",
+        "testDir": "C:/Users/munna/Documents/GitHub/Automation-ExerciseForKinetik",
+        "testIgnore": [],
+        "testMatch": [
+          "AutomationEx.test.ts"
+        ],
+        "timeout": 300000
+      },
+      {
+        "outputDir": "C:/Users/munna/Documents/GitHub/Automation-ExerciseForKinetik/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "Mobile Safari",
+        "name": "Mobile Safari",
+        "testDir": "C:/Users/munna/Documents/GitHub/Automation-ExerciseForKinetik",
         "testIgnore": [],
         "testMatch": [
           "AutomationEx.test.ts"
@@ -43,8 +95,8 @@
       "max": 5,
       "threshold": 15000
     },
-    "configFile": "C:\\Users\\User\\Desktop\\Automation Exercise UI Automation\\playwright.config.ts",
-    "rootDir": "C:/Users/User/Desktop/Automation Exercise UI Automation",
+    "configFile": "C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\playwright.config.ts",
+    "rootDir": "C:/Users/munna/Documents/GitHub/Automation-ExerciseForKinetik",
     "quiet": false,
     "shard": null,
     "updateSnapshots": "missing",
@@ -68,13 +120,13 @@
               "timeout": 300000,
               "annotations": [],
               "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
+              "projectId": "chromium",
+              "projectName": "chromium",
               "results": [
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 26070,
+                  "duration": 19363,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
@@ -82,87 +134,445 @@
                   "steps": [
                     {
                       "title": "Navigate to the Url",
-                      "duration": 4997
+                      "duration": 4680
                     },
                     {
                       "title": "Verify that home page is visible successfully",
-                      "duration": 331
+                      "duration": 32
                     },
                     {
                       "title": "Add products to cart",
-                      "duration": 336
+                      "duration": 48
                     },
                     {
                       "title": "Click on the cart button",
-                      "duration": 757
+                      "duration": 1567
                     },
                     {
                       "title": "Click on the cart button",
-                      "duration": 315
+                      "duration": 54
                     },
                     {
                       "title": "Click Proceed To Checkout",
-                      "duration": 342
+                      "duration": 30
                     },
                     {
                       "title": "Click 'Register / Login' button",
-                      "duration": 779
+                      "duration": 1162
                     },
                     {
                       "title": "Fill all details in Sign up and create account",
-                      "duration": 8592
+                      "duration": 2276
                     },
                     {
                       "title": "Verify 'ACCOUNT CREATED!' and click 'Continue' button",
-                      "duration": 995
+                      "duration": 478
                     },
                     {
                       "title": "Verify ' Logged in as username' at top",
-                      "duration": 327
+                      "duration": 84
                     },
                     {
                       "title": "Click on the cart button",
-                      "duration": 1463
+                      "duration": 1165
                     },
                     {
                       "title": "Click Proceed To Checkout",
-                      "duration": 706
+                      "duration": 427
                     },
                     {
                       "title": "Verify Address Details and Review Your Order",
-                      "duration": 620
+                      "duration": 54
                     },
                     {
                       "title": "Enter description in comment text area and click 'Place Order'",
-                      "duration": 972
+                      "duration": 1079
                     },
                     {
                       "title": "Enter payment details: Name on Card, Card Number, CVC, Expiration date",
-                      "duration": 1584
+                      "duration": 3816
                     },
                     {
                       "title": "Click 'Pay and Confirm Order' button'",
-                      "duration": 2058
+                      "duration": 2013
                     },
                     {
                       "title": "Verify the success message 'Your order has been placed successfully!'",
-                      "duration": 312
+                      "duration": 63
                     }
                   ],
-                  "startTime": "2024-03-05T22:45:15.071Z",
-                  "attachments": [
+                  "startTime": "2024-04-23T15:30:31.210Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "status": "passed",
+                  "duration": 15773,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
                     {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\User\\Desktop\\Automation Exercise UI Automation\\test-results\\tests-Automation Exercise-AutomationEx-001-Verify-the-navigation-to-the-URL\\test-finished-1.png"
+                      "title": "Navigate to the Url",
+                      "duration": 5105
+                    },
+                    {
+                      "title": "Verify that home page is visible successfully",
+                      "duration": 55
+                    },
+                    {
+                      "title": "Add products to cart",
+                      "duration": 73
+                    },
+                    {
+                      "title": "Click on the cart button",
+                      "duration": 803
+                    },
+                    {
+                      "title": "Click on the cart button",
+                      "duration": 85
+                    },
+                    {
+                      "title": "Click Proceed To Checkout",
+                      "duration": 93
+                    },
+                    {
+                      "title": "Click 'Register / Login' button",
+                      "duration": 503
+                    },
+                    {
+                      "title": "Fill all details in Sign up and create account",
+                      "duration": 2593
+                    },
+                    {
+                      "title": "Verify 'ACCOUNT CREATED!' and click 'Continue' button",
+                      "duration": 548
+                    },
+                    {
+                      "title": "Verify ' Logged in as username' at top",
+                      "duration": 93
+                    },
+                    {
+                      "title": "Click on the cart button",
+                      "duration": 1858
+                    },
+                    {
+                      "title": "Click Proceed To Checkout",
+                      "duration": 512
+                    },
+                    {
+                      "title": "Verify Address Details and Review Your Order",
+                      "duration": 78
+                    },
+                    {
+                      "title": "Enter description in comment text area and click 'Place Order'",
+                      "duration": 458
+                    },
+                    {
+                      "title": "Enter payment details: Name on Card, Card Number, CVC, Expiration date",
+                      "duration": 208
+                    },
+                    {
+                      "title": "Click 'Pay and Confirm Order' button'",
+                      "duration": 1689
+                    },
+                    {
+                      "title": "Verify the success message 'Your order has been placed successfully!'",
+                      "duration": 25
                     }
-                  ]
+                  ],
+                  "startTime": "2024-04-23T15:30:51.955Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "status": "passed",
+                  "duration": 38442,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Navigate to the Url",
+                      "duration": 4374
+                    },
+                    {
+                      "title": "Verify that home page is visible successfully",
+                      "duration": 28
+                    },
+                    {
+                      "title": "Add products to cart",
+                      "duration": 77
+                    },
+                    {
+                      "title": "Click on the cart button",
+                      "duration": 1481
+                    },
+                    {
+                      "title": "Click on the cart button",
+                      "duration": 64
+                    },
+                    {
+                      "title": "Click Proceed To Checkout",
+                      "duration": 38
+                    },
+                    {
+                      "title": "Click 'Register / Login' button",
+                      "duration": 1075
+                    },
+                    {
+                      "title": "Fill all details in Sign up and create account",
+                      "duration": 2088
+                    },
+                    {
+                      "title": "Verify 'ACCOUNT CREATED!' and click 'Continue' button",
+                      "duration": 437
+                    },
+                    {
+                      "title": "Verify ' Logged in as username' at top",
+                      "duration": 85
+                    },
+                    {
+                      "title": "Click on the cart button",
+                      "duration": 2966
+                    },
+                    {
+                      "title": "Click Proceed To Checkout",
+                      "duration": 391
+                    },
+                    {
+                      "title": "Verify Address Details and Review Your Order",
+                      "duration": 62
+                    },
+                    {
+                      "title": "Enter description in comment text area and click 'Place Order'",
+                      "duration": 1028
+                    },
+                    {
+                      "title": "Enter payment details: Name on Card, Card Number, CVC, Expiration date",
+                      "duration": 21426
+                    },
+                    {
+                      "title": "Click 'Pay and Confirm Order' button'",
+                      "duration": 2526
+                    },
+                    {
+                      "title": "Verify the success message 'Your order has been placed successfully!'",
+                      "duration": 61
+                    }
+                  ],
+                  "startTime": "2024-04-23T15:31:09.587Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Mobile Chrome",
+              "projectName": "Mobile Chrome",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "status": "passed",
+                  "duration": 15931,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Navigate to the Url",
+                      "duration": 4669
+                    },
+                    {
+                      "title": "Verify that home page is visible successfully",
+                      "duration": 24
+                    },
+                    {
+                      "title": "Add products to cart",
+                      "duration": 56
+                    },
+                    {
+                      "title": "Click on the cart button",
+                      "duration": 1433
+                    },
+                    {
+                      "title": "Click on the cart button",
+                      "duration": 53
+                    },
+                    {
+                      "title": "Click Proceed To Checkout",
+                      "duration": 80
+                    },
+                    {
+                      "title": "Click 'Register / Login' button",
+                      "duration": 1198
+                    },
+                    {
+                      "title": "Fill all details in Sign up and create account",
+                      "duration": 2003
+                    },
+                    {
+                      "title": "Verify 'ACCOUNT CREATED!' and click 'Continue' button",
+                      "duration": 504
+                    },
+                    {
+                      "title": "Verify ' Logged in as username' at top",
+                      "duration": 99
+                    },
+                    {
+                      "title": "Click on the cart button",
+                      "duration": 2688
+                    },
+                    {
+                      "title": "Click Proceed To Checkout",
+                      "duration": 460
+                    },
+                    {
+                      "title": "Verify Address Details and Review Your Order",
+                      "duration": 118
+                    },
+                    {
+                      "title": "Enter description in comment text area and click 'Place Order'",
+                      "duration": 372
+                    },
+                    {
+                      "title": "Enter payment details: Name on Card, Card Number, CVC, Expiration date",
+                      "duration": 132
+                    },
+                    {
+                      "title": "Click 'Pay and Confirm Order' button'",
+                      "duration": 1738
+                    },
+                    {
+                      "title": "Verify the success message 'Your order has been placed successfully!'",
+                      "duration": 41
+                    }
+                  ],
+                  "startTime": "2024-04-23T15:31:49.318Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Mobile Safari",
+              "projectName": "Mobile Safari",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "status": "passed",
+                  "duration": 25252,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Navigate to the Url",
+                      "duration": 5764
+                    },
+                    {
+                      "title": "Verify that home page is visible successfully",
+                      "duration": 30
+                    },
+                    {
+                      "title": "Add products to cart",
+                      "duration": 317
+                    },
+                    {
+                      "title": "Click on the cart button",
+                      "duration": 1302
+                    },
+                    {
+                      "title": "Click on the cart button",
+                      "duration": 98
+                    },
+                    {
+                      "title": "Click Proceed To Checkout",
+                      "duration": 351
+                    },
+                    {
+                      "title": "Click 'Register / Login' button",
+                      "duration": 574
+                    },
+                    {
+                      "title": "Fill all details in Sign up and create account",
+                      "duration": 9873
+                    },
+                    {
+                      "title": "Verify 'ACCOUNT CREATED!' and click 'Continue' button",
+                      "duration": 729
+                    },
+                    {
+                      "title": "Verify ' Logged in as username' at top",
+                      "duration": 107
+                    },
+                    {
+                      "title": "Click on the cart button",
+                      "duration": 734
+                    },
+                    {
+                      "title": "Click Proceed To Checkout",
+                      "duration": 781
+                    },
+                    {
+                      "title": "Verify Address Details and Review Your Order",
+                      "duration": 43
+                    },
+                    {
+                      "title": "Enter description in comment text area and click 'Place Order'",
+                      "duration": 1492
+                    },
+                    {
+                      "title": "Enter payment details: Name on Card, Card Number, CVC, Expiration date",
+                      "duration": 920
+                    },
+                    {
+                      "title": "Click 'Pay and Confirm Order' button'",
+                      "duration": 1863
+                    },
+                    {
+                      "title": "Verify the success message 'Your order has been placed successfully!'",
+                      "duration": 17
+                    }
+                  ],
+                  "startTime": "2024-04-23T15:32:08.270Z",
+                  "attachments": []
                 }
               ],
               "status": "expected"
             }
           ],
-          "id": "3b24793047643fa43483-fea7439011cfa12c44d0",
+          "id": "3b24793047643fa43483-c6d549fdebd569baeaf5",
           "file": "tests/Automation Exercise/AutomationEx.test.ts",
           "line": 5,
           "column": 5

@@ -1,7 +1,8 @@
 import type { PlaywrightTestConfig } from '@playwright/test';
 import { devices } from '@playwright/test';
-var date = new Date();
-var ReportDate = date.getFullYear() + ("0" + (date.getMonth() + 1)).slice(-2) + ("0" + date.getDate()).slice(-2) + ("0" + date.getHours()).slice(-2) + ("0" + date.getMinutes()).slice(-2) + ("0" + date.getSeconds()).slice(-2);
+// import  defineConfig  from '@playwright/test';
+let date = new Date();
+let ReportDate = date.getFullYear() + ("0" + (date.getMonth() + 1)).slice(-2) + ("0" + date.getDate()).slice(-2) + ("0" + date.getHours()).slice(-2) + ("0" + date.getMinutes()).slice(-2) + ("0" + date.getSeconds()).slice(-2);
 
 const config: PlaywrightTestConfig = {
   // testDir: './tests',
@@ -18,7 +19,7 @@ const config: PlaywrightTestConfig = {
   },
   fullyParallel: true,
   retries: process.env.CI ? 1 : 0,
-  workers: process.env.CI ? 1 : 1,
+  workers: process.env.CI ? 1 : 1, 
 
   reporter: process.env.CI ? [["junit", {
     outputFile: "results.xml"
@@ -55,40 +56,62 @@ const config: PlaywrightTestConfig = {
       slowMo: 300
 
     },
-    permissions: ["microphone", "camera", "clipboard-read", "clipboard-write"],
-    headless: process.env.CI ? true : false,
+    // export default defineConfig({
+    //   use: {
+    //     video: 'on-first-retry',
+    //   },
+    // })
+    // permissions: ["microphone", "camera", "clipboard-read", "clipboard-write"],
+    // headless: process.env.CI ? true : false,
     //headless: true ,
-    browserName: 'chromium',
-    channel: 'chromium',
-    viewport: { width: 1200, height: 720 },
-    ignoreHTTPSErrors: true,
+    // browserName: 'chromium',
+    // channel: 'chromium',
+    // viewport: { width: 1200, height: 720 },
+    // ignoreHTTPSErrors: true,
     // permissions: ["camera"],
 
 
     // actionTimeout: 2 * 60 * 1000,
-    trace: process.env.CI ? "off" : "off",
-    video: process.env.CI ? "off" : "off",
-    screenshot: process.env.CI ? "off" : "on",
+    // trace: process.env.CI ? "off" : "off",
+    // video: process.env.CI ? "off" : "off",
+    // screenshot: process.env.CI ? "off" : "on",
   },
 
 
 
 
-  // projects: [
-  //   {
-  //     name: 'chromium',
-  //     use: {
-  //       ...devices['Desktop Chrome'],
-  //     },
-  //   },
+  projects: [
+    {
+      
+      name: 'chromium',
+      use: {
+        ...devices['Desktop Chrome'],launchOptions: {headless:false}
+      },
+    },
 
-  //   // {
-  //   //   name: 'firefox',
-  //   //   use: {
-  //   //     ...devices['Desktop Firefox'],
-  //   //   },
-  //   // }
-  // ]
+    {
+      name: 'firefox',
+      use: {
+        ...devices['Desktop Firefox'],launchOptions: {headless:false}
+      },
+    },
+    {
+      name: 'webkit',
+      use: {
+        ...devices['Desktop Webkit'],launchOptions: {headless:false}
+      },
+
+    },
+    /* Test against mobile viewports. */
+    {
+      name: 'Mobile Chrome',
+      use: { ...devices['Pixel 5'] ,launchOptions: {headless:false}}
+    },
+    {
+      name: 'Mobile Safari',
+      use: { ...devices['iPhone 12'] ,launchOptions: {headless:false}}
+    },
+  ]
 };
 
 export default config;
