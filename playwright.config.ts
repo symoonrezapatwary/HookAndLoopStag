@@ -71,10 +71,10 @@ const config: PlaywrightTestConfig = {
     // permissions: ["camera"],
 
 
-    // actionTimeout: 2 * 60 * 1000,
-    // trace: process.env.CI ? "off" : "off",
-    // video: process.env.CI ? "off" : "off",
-    // screenshot: process.env.CI ? "off" : "on",
+    //actionTimeout: 2 * 60 * 1000,
+    trace: process.env.CI ? "off" : "off",
+    video: process.env.CI ? "off" : "on",
+    screenshot: process.env.CI ? "off" : "on",
   },
 
 

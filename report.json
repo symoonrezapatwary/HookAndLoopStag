@@ -126,7 +126,7 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 14392,
+                  "duration": 22317,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
@@ -134,75 +134,86 @@
                   "steps": [
                     {
                       "title": "Navigate to the Url",
-                      "duration": 3222
+                      "duration": 3868
                     },
                     {
                       "title": "Verify that home page is visible successfully",
-                      "duration": 25
+                      "duration": 28
                     },
                     {
                       "title": "Add products to cart",
-                      "duration": 50
+                      "duration": 59
                     },
                     {
                       "title": "Click on the cart button",
-                      "duration": 1476
+                      "duration": 1465
                     },
                     {
                       "title": "Click on the cart button",
-                      "duration": 50
+                      "duration": 57
                     },
                     {
                       "title": "Click Proceed To Checkout",
-                      "duration": 31
+                      "duration": 43
                     },
                     {
                       "title": "Click 'Register / Login' button",
-                      "duration": 1113
+                      "duration": 1014
                     },
                     {
                       "title": "Fill all details in Sign up and create account",
-                      "duration": 1825
+                      "duration": 2220
                     },
                     {
                       "title": "Verify 'ACCOUNT CREATED!' and click 'Continue' button",
-                      "duration": 456
+                      "duration": 457
                     },
                     {
                       "title": "Verify ' Logged in as username' at top",
-                      "duration": 88
+                      "duration": 77
                     },
                     {
                       "title": "Click on the cart button",
-                      "duration": 2273
+                      "duration": 8090
                     },
                     {
                       "title": "Click Proceed To Checkout",
-                      "duration": 392
+                      "duration": 1058
                     },
                     {
                       "title": "Verify Address Details and Review Your Order",
-                      "duration": 50
+                      "duration": 72
                     },
                     {
                       "title": "Enter description in comment text area and click 'Place Order'",
-                      "duration": 1279
+                      "duration": 1355
                     },
                     {
                       "title": "Enter payment details: Name on Card, Card Number, CVC, Expiration date",
-                      "duration": 108
+                      "duration": 105
                     },
                     {
                       "title": "Click 'Pay and Confirm Order' button'",
-                      "duration": 1706
+                      "duration": 1808
                     },
                     {
                       "title": "Verify the success message 'Your order has been placed successfully!'",
-                      "duration": 26
+                      "duration": 16
                     }
                   ],
-                  "startTime": "2024-04-24T13:27:43.179Z",
-                  "attachments": []
+                  "startTime": "2024-04-24T15:32:37.244Z",
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\test-results\\tests-Automation Exercise-AutomationEx-001-Verify-the-navigation-to-the-URL-chromium\\video.webm"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\test-results\\tests-Automation Exercise-AutomationEx-001-Verify-the-navigation-to-the-URL-chromium\\test-finished-1.png"
+                    }
+                  ]
                 }
               ],
               "status": "expected"
@@ -217,7 +228,7 @@
                 {
                   "workerIndex": 1,
                   "status": "passed",
-                  "duration": 15800,
+                  "duration": 14381,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
@@ -225,75 +236,86 @@
                   "steps": [
                     {
                       "title": "Navigate to the Url",
-                      "duration": 3154
+                      "duration": 2818
                     },
                     {
                       "title": "Verify that home page is visible successfully",
-                      "duration": 33
+                      "duration": 105
                     },
                     {
                       "title": "Add products to cart",
-                      "duration": 51
+                      "duration": 56
                     },
                     {
                       "title": "Click on the cart button",
-                      "duration": 1299
+                      "duration": 1466
                     },
                     {
                       "title": "Click on the cart button",
-                      "duration": 48
-                    },
-                    {
-                      "title": "Click Proceed To Checkout",
-                      "duration": 93
-                    },
-                    {
-                      "title": "Click 'Register / Login' button",
-                      "duration": 963
-                    },
-                    {
-                      "title": "Fill all details in Sign up and create account",
-                      "duration": 2338
-                    },
-                    {
-                      "title": "Verify 'ACCOUNT CREATED!' and click 'Continue' button",
-                      "duration": 506
-                    },
-                    {
-                      "title": "Verify ' Logged in as username' at top",
                       "duration": 82
                     },
                     {
+                      "title": "Click Proceed To Checkout",
+                      "duration": 90
+                    },
+                    {
+                      "title": "Click 'Register / Login' button",
+                      "duration": 384
+                    },
+                    {
+                      "title": "Fill all details in Sign up and create account",
+                      "duration": 2474
+                    },
+                    {
+                      "title": "Verify 'ACCOUNT CREATED!' and click 'Continue' button",
+                      "duration": 538
+                    },
+                    {
+                      "title": "Verify ' Logged in as username' at top",
+                      "duration": 109
+                    },
+                    {
                       "title": "Click on the cart button",
-                      "duration": 3200
+                      "duration": 2117
                     },
                     {
                       "title": "Click Proceed To Checkout",
-                      "duration": 504
+                      "duration": 481
                     },
                     {
                       "title": "Verify Address Details and Review Your Order",
-                      "duration": 66
+                      "duration": 93
                     },
                     {
                       "title": "Enter description in comment text area and click 'Place Order'",
-                      "duration": 467
+                      "duration": 434
                     },
                     {
                       "title": "Enter payment details: Name on Card, Card Number, CVC, Expiration date",
-                      "duration": 246
+                      "duration": 218
                     },
                     {
                       "title": "Click 'Pay and Confirm Order' button'",
-                      "duration": 1719
+                      "duration": 1715
                     },
                     {
                       "title": "Verify the success message 'Your order has been placed successfully!'",
-                      "duration": 69
+                      "duration": 59
                     }
                   ],
-                  "startTime": "2024-04-24T13:27:58.822Z",
-                  "attachments": []
+                  "startTime": "2024-04-24T15:33:00.851Z",
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\test-results\\tests-Automation Exercise-AutomationEx-001-Verify-the-navigation-to-the-URL-firefox\\video.webm"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\test-results\\tests-Automation Exercise-AutomationEx-001-Verify-the-navigation-to-the-URL-firefox\\test-finished-1.png"
+                    }
+                  ]
                 }
               ],
               "status": "expected"
@@ -308,7 +330,7 @@
                 {
                   "workerIndex": 2,
                   "status": "passed",
-                  "duration": 37885,
+                  "duration": 23067,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
@@ -316,75 +338,86 @@
                   "steps": [
                     {
                       "title": "Navigate to the Url",
-                      "duration": 4186
+                      "duration": 4202
                     },
                     {
                       "title": "Verify that home page is visible successfully",
-                      "duration": 24
-                    },
-                    {
-                      "title": "Add products to cart",
-                      "duration": 38
-                    },
-                    {
-                      "title": "Click on the cart button",
-                      "duration": 1399
-                    },
-                    {
-                      "title": "Click on the cart button",
-                      "duration": 51
-                    },
-                    {
-                      "title": "Click Proceed To Checkout",
-                      "duration": 31
-                    },
-                    {
-                      "title": "Click 'Register / Login' button",
-                      "duration": 945
-                    },
-                    {
-                      "title": "Fill all details in Sign up and create account",
-                      "duration": 1900
-                    },
-                    {
-                      "title": "Verify 'ACCOUNT CREATED!' and click 'Continue' button",
-                      "duration": 411
-                    },
-                    {
-                      "title": "Verify ' Logged in as username' at top",
-                      "duration": 73
-                    },
-                    {
-                      "title": "Click on the cart button",
-                      "duration": 7766
-                    },
-                    {
-                      "title": "Click Proceed To Checkout",
-                      "duration": 988
-                    },
-                    {
-                      "title": "Verify Address Details and Review Your Order",
                       "duration": 30
                     },
                     {
+                      "title": "Add products to cart",
+                      "duration": 46
+                    },
+                    {
+                      "title": "Click on the cart button",
+                      "duration": 1439
+                    },
+                    {
+                      "title": "Click on the cart button",
+                      "duration": 59
+                    },
+                    {
+                      "title": "Click Proceed To Checkout",
+                      "duration": 38
+                    },
+                    {
+                      "title": "Click 'Register / Login' button",
+                      "duration": 996
+                    },
+                    {
+                      "title": "Fill all details in Sign up and create account",
+                      "duration": 2268
+                    },
+                    {
+                      "title": "Verify 'ACCOUNT CREATED!' and click 'Continue' button",
+                      "duration": 468
+                    },
+                    {
+                      "title": "Verify ' Logged in as username' at top",
+                      "duration": 86
+                    },
+                    {
+                      "title": "Click on the cart button",
+                      "duration": 8735
+                    },
+                    {
+                      "title": "Click Proceed To Checkout",
+                      "duration": 1023
+                    },
+                    {
+                      "title": "Verify Address Details and Review Your Order",
+                      "duration": 49
+                    },
+                    {
                       "title": "Enter description in comment text area and click 'Place Order'",
-                      "duration": 857
+                      "duration": 1305
                     },
                     {
                       "title": "Enter payment details: Name on Card, Card Number, CVC, Expiration date",
-                      "duration": 16656
+                      "duration": 85
                     },
                     {
                       "title": "Click 'Pay and Confirm Order' button'",
-                      "duration": 2250
+                      "duration": 1757
                     },
                     {
                       "title": "Verify the success message 'Your order has been placed successfully!'",
-                      "duration": 53
+                      "duration": 59
                     }
                   ],
-                  "startTime": "2024-04-24T13:28:16.288Z",
-                  "attachments": []
+                  "startTime": "2024-04-24T15:33:17.032Z",
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\test-results\\tests-Automation Exercise-AutomationEx-001-Verify-the-navigation-to-the-URL-webkit\\video.webm"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\test-results\\tests-Automation Exercise-AutomationEx-001-Verify-the-navigation-to-the-URL-webkit\\test-finished-1.png"
+                    }
+                  ]
                 }
               ],
               "status": "expected"
@@ -399,7 +432,7 @@
                 {
                   "workerIndex": 3,
                   "status": "passed",
-                  "duration": 21541,
+                  "duration": 23355,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
@@ -407,75 +440,86 @@
                   "steps": [
                     {
                       "title": "Navigate to the Url",
-                      "duration": 4646
+                      "duration": 4272
                     },
                     {
                       "title": "Verify that home page is visible successfully",
-                      "duration": 25
+                      "duration": 22
                     },
                     {
                       "title": "Add products to cart",
-                      "duration": 40
+                      "duration": 71
                     },
                     {
                       "title": "Click on the cart button",
-                      "duration": 1641
+                      "duration": 1668
                     },
                     {
                       "title": "Click on the cart button",
-                      "duration": 41
+                      "duration": 21
                     },
                     {
                       "title": "Click Proceed To Checkout",
-                      "duration": 39
+                      "duration": 38
                     },
                     {
                       "title": "Click 'Register / Login' button",
-                      "duration": 1155
+                      "duration": 1149
                     },
                     {
                       "title": "Fill all details in Sign up and create account",
-                      "duration": 2061
+                      "duration": 2188
                     },
                     {
                       "title": "Verify 'ACCOUNT CREATED!' and click 'Continue' button",
-                      "duration": 425
+                      "duration": 488
                     },
                     {
                       "title": "Verify ' Logged in as username' at top",
-                      "duration": 79
+                      "duration": 88
                     },
                     {
                       "title": "Click on the cart button",
-                      "duration": 4614
+                      "duration": 5130
                     },
                     {
                       "title": "Click Proceed To Checkout",
-                      "duration": 413
+                      "duration": 397
                     },
                     {
                       "title": "Verify Address Details and Review Your Order",
-                      "duration": 90
+                      "duration": 56
                     },
                     {
                       "title": "Enter description in comment text area and click 'Place Order'",
-                      "duration": 1069
+                      "duration": 1080
                     },
                     {
                       "title": "Enter payment details: Name on Card, Card Number, CVC, Expiration date",
-                      "duration": 3158
+                      "duration": 4450
                     },
                     {
                       "title": "Click 'Pay and Confirm Order' button'",
-                      "duration": 1758
+                      "duration": 1731
                     },
                     {
                       "title": "Verify the success message 'Your order has been placed successfully!'",
-                      "duration": 73
+                      "duration": 53
                     }
                   ],
-                  "startTime": "2024-04-24T13:28:55.396Z",
-                  "attachments": []
+                  "startTime": "2024-04-24T15:33:41.301Z",
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\test-results\\tests-Automation Exercise-AutomationEx-001-Verify-the-navigation-to-the-URL-Mobile-Chrome\\video.webm"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\test-results\\tests-Automation Exercise-AutomationEx-001-Verify-the-navigation-to-the-URL-Mobile-Chrome\\test-finished-1.png"
+                    }
+                  ]
                 }
               ],
               "status": "expected"
@@ -490,7 +534,7 @@
                 {
                   "workerIndex": 4,
                   "status": "passed",
-                  "duration": 23604,
+                  "duration": 29290,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
@@ -498,75 +542,86 @@
                   "steps": [
                     {
                       "title": "Navigate to the Url",
-                      "duration": 4857
+                      "duration": 5776
                     },
                     {
                       "title": "Verify that home page is visible successfully",
-                      "duration": 53
+                      "duration": 113
                     },
                     {
                       "title": "Add products to cart",
-                      "duration": 222
+                      "duration": 642
                     },
                     {
                       "title": "Click on the cart button",
-                      "duration": 1817
+                      "duration": 1804
                     },
                     {
                       "title": "Click on the cart button",
-                      "duration": 97
+                      "duration": 98
                     },
                     {
                       "title": "Click Proceed To Checkout",
-                      "duration": 288
+                      "duration": 360
                     },
                     {
                       "title": "Click 'Register / Login' button",
-                      "duration": 521
+                      "duration": 736
                     },
                     {
                       "title": "Fill all details in Sign up and create account",
-                      "duration": 8907
+                      "duration": 10679
                     },
                     {
                       "title": "Verify 'ACCOUNT CREATED!' and click 'Continue' button",
-                      "duration": 817
+                      "duration": 856
                     },
                     {
                       "title": "Verify ' Logged in as username' at top",
-                      "duration": 123
+                      "duration": 136
                     },
                     {
                       "title": "Click on the cart button",
-                      "duration": 622
+                      "duration": 713
                     },
                     {
                       "title": "Click Proceed To Checkout",
-                      "duration": 833
+                      "duration": 801
                     },
                     {
                       "title": "Verify Address Details and Review Your Order",
-                      "duration": 38
+                      "duration": 66
                     },
                     {
                       "title": "Enter description in comment text area and click 'Place Order'",
-                      "duration": 1500
+                      "duration": 1789
                     },
                     {
                       "title": "Enter payment details: Name on Card, Card Number, CVC, Expiration date",
-                      "duration": 562
+                      "duration": 1114
                     },
                     {
                       "title": "Click 'Pay and Confirm Order' button'",
-                      "duration": 2045
+                      "duration": 2545
                     },
                     {
                       "title": "Verify the success message 'Your order has been placed successfully!'",
-                      "duration": 84
+                      "duration": 168
                     }
                   ],
-                  "startTime": "2024-04-24T13:29:18.158Z",
-                  "attachments": []
+                  "startTime": "2024-04-24T15:34:05.943Z",
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\test-results\\tests-Automation Exercise-AutomationEx-001-Verify-the-navigation-to-the-URL-Mobile-Safari\\video.webm"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\test-results\\tests-Automation Exercise-AutomationEx-001-Verify-the-navigation-to-the-URL-Mobile-Safari\\test-finished-1.png"
+                    }
+                  ]
                 }
               ],
               "status": "expected"
