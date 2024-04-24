@@ -126,7 +126,7 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 19363,
+                  "duration": 14392,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
@@ -134,74 +134,74 @@
                   "steps": [
                     {
                       "title": "Navigate to the Url",
-                      "duration": 4680
+                      "duration": 3222
                     },
                     {
                       "title": "Verify that home page is visible successfully",
-                      "duration": 32
+                      "duration": 25
                     },
                     {
                       "title": "Add products to cart",
-                      "duration": 48
+                      "duration": 50
                     },
                     {
                       "title": "Click on the cart button",
-                      "duration": 1567
+                      "duration": 1476
                     },
                     {
                       "title": "Click on the cart button",
-                      "duration": 54
+                      "duration": 50
                     },
                     {
                       "title": "Click Proceed To Checkout",
-                      "duration": 30
+                      "duration": 31
                     },
                     {
                       "title": "Click 'Register / Login' button",
-                      "duration": 1162
+                      "duration": 1113
                     },
                     {
                       "title": "Fill all details in Sign up and create account",
-                      "duration": 2276
+                      "duration": 1825
                     },
                     {
                       "title": "Verify 'ACCOUNT CREATED!' and click 'Continue' button",
-                      "duration": 478
+                      "duration": 456
                     },
                     {
                       "title": "Verify ' Logged in as username' at top",
-                      "duration": 84
+                      "duration": 88
                     },
                     {
                       "title": "Click on the cart button",
-                      "duration": 1165
+                      "duration": 2273
                     },
                     {
                       "title": "Click Proceed To Checkout",
-                      "duration": 427
+                      "duration": 392
                     },
                     {
                       "title": "Verify Address Details and Review Your Order",
-                      "duration": 54
+                      "duration": 50
                     },
                     {
                       "title": "Enter description in comment text area and click 'Place Order'",
-                      "duration": 1079
+                      "duration": 1279
                     },
                     {
                       "title": "Enter payment details: Name on Card, Card Number, CVC, Expiration date",
-                      "duration": 3816
+                      "duration": 108
                     },
                     {
                       "title": "Click 'Pay and Confirm Order' button'",
-                      "duration": 2013
+                      "duration": 1706
                     },
                     {
                       "title": "Verify the success message 'Your order has been placed successfully!'",
-                      "duration": 63
+                      "duration": 26
                     }
                   ],
-                  "startTime": "2024-04-23T15:30:31.210Z",
+                  "startTime": "2024-04-24T13:27:43.179Z",
                   "attachments": []
                 }
               ],
@@ -217,7 +217,7 @@
                 {
                   "workerIndex": 1,
                   "status": "passed",
-                  "duration": 15773,
+                  "duration": 15800,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
@@ -225,23 +225,23 @@
                   "steps": [
                     {
                       "title": "Navigate to the Url",
-                      "duration": 5105
+                      "duration": 3154
                     },
                     {
                       "title": "Verify that home page is visible successfully",
-                      "duration": 55
+                      "duration": 33
                     },
                     {
                       "title": "Add products to cart",
-                      "duration": 73
+                      "duration": 51
                     },
                     {
                       "title": "Click on the cart button",
-                      "duration": 803
+                      "duration": 1299
                     },
                     {
                       "title": "Click on the cart button",
-                      "duration": 85
+                      "duration": 48
                     },
                     {
                       "title": "Click Proceed To Checkout",
@@ -249,50 +249,50 @@
                     },
                     {
                       "title": "Click 'Register / Login' button",
-                      "duration": 503
+                      "duration": 963
                     },
                     {
                       "title": "Fill all details in Sign up and create account",
-                      "duration": 2593
+                      "duration": 2338
                     },
                     {
                       "title": "Verify 'ACCOUNT CREATED!' and click 'Continue' button",
-                      "duration": 548
+                      "duration": 506
                     },
                     {
                       "title": "Verify ' Logged in as username' at top",
-                      "duration": 93
+                      "duration": 82
                     },
                     {
                       "title": "Click on the cart button",
-                      "duration": 1858
+                      "duration": 3200
                     },
                     {
                       "title": "Click Proceed To Checkout",
-                      "duration": 512
+                      "duration": 504
                     },
                     {
                       "title": "Verify Address Details and Review Your Order",
-                      "duration": 78
+                      "duration": 66
                     },
                     {
                       "title": "Enter description in comment text area and click 'Place Order'",
-                      "duration": 458
+                      "duration": 467
                     },
                     {
                       "title": "Enter payment details: Name on Card, Card Number, CVC, Expiration date",
-                      "duration": 208
+                      "duration": 246
                     },
                     {
                       "title": "Click 'Pay and Confirm Order' button'",
-                      "duration": 1689
+                      "duration": 1719
                     },
                     {
                       "title": "Verify the success message 'Your order has been placed successfully!'",
-                      "duration": 25
+                      "duration": 69
                     }
                   ],
-                  "startTime": "2024-04-23T15:30:51.955Z",
+                  "startTime": "2024-04-24T13:27:58.822Z",
                   "attachments": []
                 }
               ],
@@ -308,7 +308,7 @@
                 {
                   "workerIndex": 2,
                   "status": "passed",
-                  "duration": 38442,
+                  "duration": 37885,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
@@ -316,74 +316,74 @@
                   "steps": [
                     {
                       "title": "Navigate to the Url",
-                      "duration": 4374
+                      "duration": 4186
                     },
                     {
                       "title": "Verify that home page is visible successfully",
-                      "duration": 28
+                      "duration": 24
                     },
                     {
                       "title": "Add products to cart",
-                      "duration": 77
-                    },
-                    {
-                      "title": "Click on the cart button",
-                      "duration": 1481
-                    },
-                    {
-                      "title": "Click on the cart button",
-                      "duration": 64
-                    },
-                    {
-                      "title": "Click Proceed To Checkout",
                       "duration": 38
                     },
                     {
-                      "title": "Click 'Register / Login' button",
-                      "duration": 1075
-                    },
-                    {
-                      "title": "Fill all details in Sign up and create account",
-                      "duration": 2088
-                    },
-                    {
-                      "title": "Verify 'ACCOUNT CREATED!' and click 'Continue' button",
-                      "duration": 437
-                    },
-                    {
-                      "title": "Verify ' Logged in as username' at top",
-                      "duration": 85
+                      "title": "Click on the cart button",
+                      "duration": 1399
                     },
                     {
                       "title": "Click on the cart button",
-                      "duration": 2966
+                      "duration": 51
                     },
                     {
                       "title": "Click Proceed To Checkout",
-                      "duration": 391
+                      "duration": 31
+                    },
+                    {
+                      "title": "Click 'Register / Login' button",
+                      "duration": 945
+                    },
+                    {
+                      "title": "Fill all details in Sign up and create account",
+                      "duration": 1900
+                    },
+                    {
+                      "title": "Verify 'ACCOUNT CREATED!' and click 'Continue' button",
+                      "duration": 411
+                    },
+                    {
+                      "title": "Verify ' Logged in as username' at top",
+                      "duration": 73
+                    },
+                    {
+                      "title": "Click on the cart button",
+                      "duration": 7766
+                    },
+                    {
+                      "title": "Click Proceed To Checkout",
+                      "duration": 988
                     },
                     {
                       "title": "Verify Address Details and Review Your Order",
-                      "duration": 62
+                      "duration": 30
                     },
                     {
                       "title": "Enter description in comment text area and click 'Place Order'",
-                      "duration": 1028
+                      "duration": 857
                     },
                     {
                       "title": "Enter payment details: Name on Card, Card Number, CVC, Expiration date",
-                      "duration": 21426
+                      "duration": 16656
                     },
                     {
                       "title": "Click 'Pay and Confirm Order' button'",
-                      "duration": 2526
+                      "duration": 2250
                     },
                     {
                       "title": "Verify the success message 'Your order has been placed successfully!'",
-                      "duration": 61
+                      "duration": 53
                     }
                   ],
-                  "startTime": "2024-04-23T15:31:09.587Z",
+                  "startTime": "2024-04-24T13:28:16.288Z",
                   "attachments": []
                 }
               ],
@@ -399,7 +399,7 @@
                 {
                   "workerIndex": 3,
                   "status": "passed",
-                  "duration": 15931,
+                  "duration": 21541,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
@@ -407,74 +407,74 @@
                   "steps": [
                     {
                       "title": "Navigate to the Url",
-                      "duration": 4669
+                      "duration": 4646
                     },
                     {
                       "title": "Verify that home page is visible successfully",
-                      "duration": 24
+                      "duration": 25
                     },
                     {
                       "title": "Add products to cart",
-                      "duration": 56
+                      "duration": 40
                     },
                     {
                       "title": "Click on the cart button",
-                      "duration": 1433
+                      "duration": 1641
                     },
                     {
                       "title": "Click on the cart button",
-                      "duration": 53
+                      "duration": 41
                     },
                     {
                       "title": "Click Proceed To Checkout",
-                      "duration": 80
+                      "duration": 39
                     },
                     {
                       "title": "Click 'Register / Login' button",
-                      "duration": 1198
+                      "duration": 1155
                     },
                     {
                       "title": "Fill all details in Sign up and create account",
-                      "duration": 2003
+                      "duration": 2061
                     },
                     {
                       "title": "Verify 'ACCOUNT CREATED!' and click 'Continue' button",
-                      "duration": 504
+                      "duration": 425
                     },
                     {
                       "title": "Verify ' Logged in as username' at top",
-                      "duration": 99
+                      "duration": 79
                     },
                     {
                       "title": "Click on the cart button",
-                      "duration": 2688
+                      "duration": 4614
                     },
                     {
                       "title": "Click Proceed To Checkout",
-                      "duration": 460
+                      "duration": 413
                     },
                     {
                       "title": "Verify Address Details and Review Your Order",
-                      "duration": 118
+                      "duration": 90
                     },
                     {
                       "title": "Enter description in comment text area and click 'Place Order'",
-                      "duration": 372
+                      "duration": 1069
                     },
                     {
                       "title": "Enter payment details: Name on Card, Card Number, CVC, Expiration date",
-                      "duration": 132
+                      "duration": 3158
                     },
                     {
                       "title": "Click 'Pay and Confirm Order' button'",
-                      "duration": 1738
+                      "duration": 1758
                     },
                     {
                       "title": "Verify the success message 'Your order has been placed successfully!'",
-                      "duration": 41
+                      "duration": 73
                     }
                   ],
-                  "startTime": "2024-04-23T15:31:49.318Z",
+                  "startTime": "2024-04-24T13:28:55.396Z",
                   "attachments": []
                 }
               ],
@@ -490,7 +490,7 @@
                 {
                   "workerIndex": 4,
                   "status": "passed",
-                  "duration": 25252,
+                  "duration": 23604,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
@@ -498,74 +498,74 @@
                   "steps": [
                     {
                       "title": "Navigate to the Url",
-                      "duration": 5764
+                      "duration": 4857
                     },
                     {
                       "title": "Verify that home page is visible successfully",
-                      "duration": 30
+                      "duration": 53
                     },
                     {
                       "title": "Add products to cart",
-                      "duration": 317
+                      "duration": 222
                     },
                     {
                       "title": "Click on the cart button",
-                      "duration": 1302
+                      "duration": 1817
                     },
                     {
                       "title": "Click on the cart button",
-                      "duration": 98
+                      "duration": 97
                     },
                     {
                       "title": "Click Proceed To Checkout",
-                      "duration": 351
+                      "duration": 288
                     },
                     {
                       "title": "Click 'Register / Login' button",
-                      "duration": 574
+                      "duration": 521
                     },
                     {
                       "title": "Fill all details in Sign up and create account",
-                      "duration": 9873
+                      "duration": 8907
                     },
                     {
                       "title": "Verify 'ACCOUNT CREATED!' and click 'Continue' button",
-                      "duration": 729
+                      "duration": 817
                     },
                     {
                       "title": "Verify ' Logged in as username' at top",
-                      "duration": 107
+                      "duration": 123
                     },
                     {
                       "title": "Click on the cart button",
-                      "duration": 734
+                      "duration": 622
                     },
                     {
                       "title": "Click Proceed To Checkout",
-                      "duration": 781
+                      "duration": 833
                     },
                     {
                       "title": "Verify Address Details and Review Your Order",
-                      "duration": 43
+                      "duration": 38
                     },
                     {
                       "title": "Enter description in comment text area and click 'Place Order'",
-                      "duration": 1492
+                      "duration": 1500
                     },
                     {
                       "title": "Enter payment details: Name on Card, Card Number, CVC, Expiration date",
-                      "duration": 920
+                      "duration": 562
                     },
                     {
                       "title": "Click 'Pay and Confirm Order' button'",
-                      "duration": 1863
+                      "duration": 2045
                     },
                     {
                       "title": "Verify the success message 'Your order has been placed successfully!'",
-                      "duration": 17
+                      "duration": 84
                     }
                   ],
-                  "startTime": "2024-04-23T15:32:08.270Z",
+                  "startTime": "2024-04-24T13:29:18.158Z",
                   "attachments": []
                 }
               ],

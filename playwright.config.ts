@@ -109,7 +109,7 @@ const config: PlaywrightTestConfig = {
     },
     {
       name: 'Mobile Safari',
-      use: { ...devices['iPhone 12'] ,launchOptions: {headless:false}}
+      use: { ...devices['iPhone 13'] ,launchOptions: {headless:false}}
     },
   ]
 };

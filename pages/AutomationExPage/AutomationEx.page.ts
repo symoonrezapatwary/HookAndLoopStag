@@ -59,6 +59,7 @@ export default class AutomationEXPage {
         year: "//input[@placeholder='YYYY']",
         payndconfirm: "//button[text()='Pay and Confirm Order']",
         orderSuccess: "//div[text()[normalize-space()='Your order has been placed successfully!']]",
+        EmailINput:"//input[@data-qa='signup-email']",
 
 
     }//Checking the visibility of the Logo from the Home Page
@@ -161,11 +162,13 @@ export default class AutomationEXPage {
     //Email input for sign up
     async Email_Input() {
         const email = await this.generateRandomEmail();
+        const ele= this.page.locator(this.AutomationEx_page_elements.EmailINput)
        
 
         try {
             
-            await this.page.fill("//input[@data-qa='signup-email']", email)
+            // await this.page.fill("//input[@data-qa='signup-email']", email)
+            await ele.fill(email)
            
 
 
