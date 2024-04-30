@@ -9,6 +9,8 @@ const config: PlaywrightTestConfig = {
   testMatch: [
 
     "AutomationEx.test.ts",
+    "Navigation.test.ts",
+    
 
 
   ],
@@ -89,28 +91,28 @@ const config: PlaywrightTestConfig = {
       },
     },
 
-    {
-      name: 'firefox',
-      use: {
-        ...devices['Desktop Firefox'],launchOptions: {headless:false}
-      },
-    },
-    {
-      name: 'webkit',
-      use: {
-        ...devices['Desktop Webkit'],launchOptions: {headless:false}
-      },
+    // {
+    //   name: 'firefox',
+    //   use: {
+    //     ...devices['Desktop Firefox'],launchOptions: {headless:false}
+    //   },
+    // },
+    // {
+    //   name: 'webkit',
+    //   use: {
+    //     ...devices['Desktop Webkit'],launchOptions: {headless:false}
+    //   },
 
-    },
-    /* Test against mobile viewports. */
-    {
-      name: 'Mobile Chrome',
-      use: { ...devices['Pixel 5'] ,launchOptions: {headless:false}}
-    },
-    {
-      name: 'Mobile Safari',
-      use: { ...devices['iPhone 13'] ,launchOptions: {headless:false}}
-    },
+    // },
+    // /* Test against mobile viewports. */
+    // {
+    //   name: 'Mobile Chrome',
+    //   use: { ...devices['Pixel 5'] ,launchOptions: {headless:false}}
+    // },
+    // {
+    //   name: 'Mobile Safari',
+    //   use: { ...devices['iPhone 13'] ,launchOptions: {headless:false}}
+    // },
   ]
 };
 

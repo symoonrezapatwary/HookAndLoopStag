@@ -4,6 +4,8 @@ import BaseFunctions from "@base-function/baseFunctions";
 import testData from "@testData/testData"
 
 import AutomationExPage from "@pages/AutomationEx.page";
+import NavigationPage from "@pages/Navigation.page";
+
 
 
 
@@ -12,6 +14,8 @@ const test = baseTest.extend<{
     testData: testData;
     BaseFunctions: BaseFunctions;
     AutomationExPage:AutomationExPage;
+    NAvigationPage: NavigationPage;
+    
 
 }>({
     
@@ -23,7 +27,10 @@ const test = baseTest.extend<{
     async ({ page }, use) => {
         await use(new AutomationExPage(page));
     },
-   
+    NAvigationPage: 
+    async ({ page }, use) => {
+        await use(new NavigationPage(page));
+    },
 
 })
 export default test;

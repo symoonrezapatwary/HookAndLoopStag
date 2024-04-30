@@ -20,59 +20,8 @@
         "testDir": "C:/Users/munna/Documents/GitHub/Automation-ExerciseForKinetik",
         "testIgnore": [],
         "testMatch": [
-          "AutomationEx.test.ts"
-        ],
-        "timeout": 300000
-      },
-      {
-        "outputDir": "C:/Users/munna/Documents/GitHub/Automation-ExerciseForKinetik/test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "id": "firefox",
-        "name": "firefox",
-        "testDir": "C:/Users/munna/Documents/GitHub/Automation-ExerciseForKinetik",
-        "testIgnore": [],
-        "testMatch": [
-          "AutomationEx.test.ts"
-        ],
-        "timeout": 300000
-      },
-      {
-        "outputDir": "C:/Users/munna/Documents/GitHub/Automation-ExerciseForKinetik/test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "id": "webkit",
-        "name": "webkit",
-        "testDir": "C:/Users/munna/Documents/GitHub/Automation-ExerciseForKinetik",
-        "testIgnore": [],
-        "testMatch": [
-          "AutomationEx.test.ts"
-        ],
-        "timeout": 300000
-      },
-      {
-        "outputDir": "C:/Users/munna/Documents/GitHub/Automation-ExerciseForKinetik/test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "id": "Mobile Chrome",
-        "name": "Mobile Chrome",
-        "testDir": "C:/Users/munna/Documents/GitHub/Automation-ExerciseForKinetik",
-        "testIgnore": [],
-        "testMatch": [
-          "AutomationEx.test.ts"
-        ],
-        "timeout": 300000
-      },
-      {
-        "outputDir": "C:/Users/munna/Documents/GitHub/Automation-ExerciseForKinetik/test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "id": "Mobile Safari",
-        "name": "Mobile Safari",
-        "testDir": "C:/Users/munna/Documents/GitHub/Automation-ExerciseForKinetik",
-        "testIgnore": [],
-        "testMatch": [
-          "AutomationEx.test.ts"
+          "AutomationEx.test.ts",
+          "Navigation.test.ts"
         ],
         "timeout": 300000
       }
@@ -112,8 +61,8 @@
       "line": 0,
       "specs": [
         {
-          "title": "001 | Verify the navigation to the URL",
-          "ok": true,
+          "title": "004 | Verify The manual vehicle selection is working properly",
+          "ok": false,
           "tags": [],
           "tests": [
             {
@@ -125,512 +74,70 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 22317,
-                  "errors": [],
+                  "status": "failed",
+                  "duration": 68935,
+                  "error": {
+                    "message": "Unable to find the option element from the Homepage |  Error occured: TimeoutError: locator.dblclick: Timeout 60000ms exceeded.\n=========================== logs ===========================\nwaiting for locator('xpath=(//option[@value=\\'BMW\\'])[1]')\n  locator resolved to hidden <option value=\"BMW\">BMW</option>\nattempting dblclick action\n  waiting for element to be visible, enabled and stable\n    element is not visible - waiting...\n============================================================",
+                    "stack": "Error: Unable to find the option element from the Homepage |  Error occured: TimeoutError: locator.dblclick: Timeout 60000ms exceeded.\n=========================== logs ===========================\nwaiting for locator('xpath=(//option[@value=\\'BMW\\'])[1]')\n  locator resolved to hidden <option value=\"BMW\">BMW</option>\nattempting dblclick action\n  waiting for element to be visible, enabled and stable\n    element is not visible - waiting...\n============================================================\n    at AutomationEXPage.SelectMakeDRpdownOption (C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\pages\\AutomationExPage\\AutomationEx.page.ts:112:19)\n    at C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\tests\\Automation Exercise\\AutomationEx.test.ts:63:9\n    at C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\tests\\Automation Exercise\\AutomationEx.test.ts:62:5"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\pages\\AutomationExPage\\AutomationEx.page.ts",
+                        "column": 19,
+                        "line": 112
+                      },
+                      "message": "Error: Unable to find the option element from the Homepage |  Error occured: TimeoutError: locator.dblclick: Timeout 60000ms exceeded.\n=========================== logs ===========================\nwaiting for locator('xpath=(//option[@value=\\'BMW\\'])[1]')\n  locator resolved to hidden <option value=\"BMW\">BMW</option>\nattempting dblclick action\n  waiting for element to be visible, enabled and stable\n    element is not visible - waiting...\n============================================================\n\n\u001b[90m   at \u001b[39mpages\\AutomationExPage\\AutomationEx.page.ts:112\n\n\u001b[0m \u001b[90m 110 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 111 |\u001b[39m         } \u001b[36mcatch\u001b[39m (error) {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 112 |\u001b[39m             \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'Unable to find the option element from the Homepage |  Error occured: '\u001b[39m \u001b[33m+\u001b[39m error)\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 113 |\u001b[39m         }\u001b[0m\n\u001b[0m \u001b[90m 114 |\u001b[39m     }\u001b[0m\n\u001b[0m \u001b[90m 115 |\u001b[39m     \u001b[36masync\u001b[39m \u001b[33mSelectModelDRpdown\u001b[39m() {\u001b[0m\n\n\u001b[2m    at AutomationEXPage.SelectMakeDRpdownOption (C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\pages\\AutomationExPage\\AutomationEx.page.ts:112:19)\u001b[22m\n\u001b[2m    at C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\tests\\Automation Exercise\\AutomationEx.test.ts:63:9\u001b[22m\n\u001b[2m    at C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\tests\\Automation Exercise\\AutomationEx.test.ts:62:5\u001b[22m"
+                    }
+                  ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
                   "steps": [
                     {
                       "title": "Navigate to the Url",
-                      "duration": 3868
+                      "duration": 5150
                     },
                     {
-                      "title": "Verify that home page is visible successfully",
-                      "duration": 28
+                      "title": "Click on the Make dropdown",
+                      "duration": 222
                     },
                     {
-                      "title": "Add products to cart",
-                      "duration": 59
-                    },
-                    {
-                      "title": "Click on the cart button",
-                      "duration": 1465
-                    },
-                    {
-                      "title": "Click on the cart button",
-                      "duration": 57
-                    },
-                    {
-                      "title": "Click Proceed To Checkout",
-                      "duration": 43
-                    },
-                    {
-                      "title": "Click 'Register / Login' button",
-                      "duration": 1014
-                    },
-                    {
-                      "title": "Fill all details in Sign up and create account",
-                      "duration": 2220
-                    },
-                    {
-                      "title": "Verify 'ACCOUNT CREATED!' and click 'Continue' button",
-                      "duration": 457
-                    },
-                    {
-                      "title": "Verify ' Logged in as username' at top",
-                      "duration": 77
-                    },
-                    {
-                      "title": "Click on the cart button",
-                      "duration": 8090
-                    },
-                    {
-                      "title": "Click Proceed To Checkout",
-                      "duration": 1058
-                    },
-                    {
-                      "title": "Verify Address Details and Review Your Order",
-                      "duration": 72
-                    },
-                    {
-                      "title": "Enter description in comment text area and click 'Place Order'",
-                      "duration": 1355
-                    },
-                    {
-                      "title": "Enter payment details: Name on Card, Card Number, CVC, Expiration date",
-                      "duration": 105
-                    },
-                    {
-                      "title": "Click 'Pay and Confirm Order' button'",
-                      "duration": 1808
-                    },
-                    {
-                      "title": "Verify the success message 'Your order has been placed successfully!'",
-                      "duration": 16
+                      "title": "Click on the \"BMW\" OPtion",
+                      "duration": 63037,
+                      "error": {
+                        "message": "Unable to find the option element from the Homepage |  Error occured: TimeoutError: locator.dblclick: Timeout 60000ms exceeded.\n=========================== logs ===========================\nwaiting for locator('xpath=(//option[@value=\\'BMW\\'])[1]')\n  locator resolved to hidden <option value=\"BMW\">BMW</option>\nattempting dblclick action\n  waiting for element to be visible, enabled and stable\n    element is not visible - waiting...\n============================================================",
+                        "stack": "Error: Unable to find the option element from the Homepage |  Error occured: TimeoutError: locator.dblclick: Timeout 60000ms exceeded.\n=========================== logs ===========================\nwaiting for locator('xpath=(//option[@value=\\'BMW\\'])[1]')\n  locator resolved to hidden <option value=\"BMW\">BMW</option>\nattempting dblclick action\n  waiting for element to be visible, enabled and stable\n    element is not visible - waiting...\n============================================================\n    at AutomationEXPage.SelectMakeDRpdownOption (C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\pages\\AutomationExPage\\AutomationEx.page.ts:112:19)\n    at C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\tests\\Automation Exercise\\AutomationEx.test.ts:63:9\n    at C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\tests\\Automation Exercise\\AutomationEx.test.ts:62:5"
+                      }
                     }
                   ],
-                  "startTime": "2024-04-24T15:32:37.244Z",
+                  "startTime": "2024-04-30T15:54:20.626Z",
                   "attachments": [
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\test-results\\tests-Automation Exercise-AutomationEx-001-Verify-the-navigation-to-the-URL-chromium\\video.webm"
+                      "path": "C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\test-results\\tests-Automation Exercise-AutomationEx-004-Verify-The-manual-vehicle-selection-is-working-properly-chromium\\video.webm"
                     },
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\test-results\\tests-Automation Exercise-AutomationEx-001-Verify-the-navigation-to-the-URL-chromium\\test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            },
-            {
-              "timeout": 300000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "firefox",
-              "projectName": "firefox",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "status": "passed",
-                  "duration": 14381,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "steps": [
-                    {
-                      "title": "Navigate to the Url",
-                      "duration": 2818
-                    },
-                    {
-                      "title": "Verify that home page is visible successfully",
-                      "duration": 105
-                    },
-                    {
-                      "title": "Add products to cart",
-                      "duration": 56
-                    },
-                    {
-                      "title": "Click on the cart button",
-                      "duration": 1466
-                    },
-                    {
-                      "title": "Click on the cart button",
-                      "duration": 82
-                    },
-                    {
-                      "title": "Click Proceed To Checkout",
-                      "duration": 90
-                    },
-                    {
-                      "title": "Click 'Register / Login' button",
-                      "duration": 384
-                    },
-                    {
-                      "title": "Fill all details in Sign up and create account",
-                      "duration": 2474
-                    },
-                    {
-                      "title": "Verify 'ACCOUNT CREATED!' and click 'Continue' button",
-                      "duration": 538
-                    },
-                    {
-                      "title": "Verify ' Logged in as username' at top",
-                      "duration": 109
-                    },
-                    {
-                      "title": "Click on the cart button",
-                      "duration": 2117
-                    },
-                    {
-                      "title": "Click Proceed To Checkout",
-                      "duration": 481
-                    },
-                    {
-                      "title": "Verify Address Details and Review Your Order",
-                      "duration": 93
-                    },
-                    {
-                      "title": "Enter description in comment text area and click 'Place Order'",
-                      "duration": 434
-                    },
-                    {
-                      "title": "Enter payment details: Name on Card, Card Number, CVC, Expiration date",
-                      "duration": 218
-                    },
-                    {
-                      "title": "Click 'Pay and Confirm Order' button'",
-                      "duration": 1715
-                    },
-                    {
-                      "title": "Verify the success message 'Your order has been placed successfully!'",
-                      "duration": 59
+                      "path": "C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\test-results\\tests-Automation Exercise-AutomationEx-004-Verify-The-manual-vehicle-selection-is-working-properly-chromium\\test-failed-1.png"
                     }
                   ],
-                  "startTime": "2024-04-24T15:33:00.851Z",
-                  "attachments": [
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\test-results\\tests-Automation Exercise-AutomationEx-001-Verify-the-navigation-to-the-URL-firefox\\video.webm"
-                    },
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\test-results\\tests-Automation Exercise-AutomationEx-001-Verify-the-navigation-to-the-URL-firefox\\test-finished-1.png"
-                    }
-                  ]
+                  "errorLocation": {
+                    "file": "C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\pages\\AutomationExPage\\AutomationEx.page.ts",
+                    "column": 19,
+                    "line": 112
+                  }
                 }
               ],
-              "status": "expected"
-            },
-            {
-              "timeout": 300000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "webkit",
-              "projectName": "webkit",
-              "results": [
-                {
-                  "workerIndex": 2,
-                  "status": "passed",
-                  "duration": 23067,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "steps": [
-                    {
-                      "title": "Navigate to the Url",
-                      "duration": 4202
-                    },
-                    {
-                      "title": "Verify that home page is visible successfully",
-                      "duration": 30
-                    },
-                    {
-                      "title": "Add products to cart",
-                      "duration": 46
-                    },
-                    {
-                      "title": "Click on the cart button",
-                      "duration": 1439
-                    },
-                    {
-                      "title": "Click on the cart button",
-                      "duration": 59
-                    },
-                    {
-                      "title": "Click Proceed To Checkout",
-                      "duration": 38
-                    },
-                    {
-                      "title": "Click 'Register / Login' button",
-                      "duration": 996
-                    },
-                    {
-                      "title": "Fill all details in Sign up and create account",
-                      "duration": 2268
-                    },
-                    {
-                      "title": "Verify 'ACCOUNT CREATED!' and click 'Continue' button",
-                      "duration": 468
-                    },
-                    {
-                      "title": "Verify ' Logged in as username' at top",
-                      "duration": 86
-                    },
-                    {
-                      "title": "Click on the cart button",
-                      "duration": 8735
-                    },
-                    {
-                      "title": "Click Proceed To Checkout",
-                      "duration": 1023
-                    },
-                    {
-                      "title": "Verify Address Details and Review Your Order",
-                      "duration": 49
-                    },
-                    {
-                      "title": "Enter description in comment text area and click 'Place Order'",
-                      "duration": 1305
-                    },
-                    {
-                      "title": "Enter payment details: Name on Card, Card Number, CVC, Expiration date",
-                      "duration": 85
-                    },
-                    {
-                      "title": "Click 'Pay and Confirm Order' button'",
-                      "duration": 1757
-                    },
-                    {
-                      "title": "Verify the success message 'Your order has been placed successfully!'",
-                      "duration": 59
-                    }
-                  ],
-                  "startTime": "2024-04-24T15:33:17.032Z",
-                  "attachments": [
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\test-results\\tests-Automation Exercise-AutomationEx-001-Verify-the-navigation-to-the-URL-webkit\\video.webm"
-                    },
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\test-results\\tests-Automation Exercise-AutomationEx-001-Verify-the-navigation-to-the-URL-webkit\\test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            },
-            {
-              "timeout": 300000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "Mobile Chrome",
-              "projectName": "Mobile Chrome",
-              "results": [
-                {
-                  "workerIndex": 3,
-                  "status": "passed",
-                  "duration": 23355,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "steps": [
-                    {
-                      "title": "Navigate to the Url",
-                      "duration": 4272
-                    },
-                    {
-                      "title": "Verify that home page is visible successfully",
-                      "duration": 22
-                    },
-                    {
-                      "title": "Add products to cart",
-                      "duration": 71
-                    },
-                    {
-                      "title": "Click on the cart button",
-                      "duration": 1668
-                    },
-                    {
-                      "title": "Click on the cart button",
-                      "duration": 21
-                    },
-                    {
-                      "title": "Click Proceed To Checkout",
-                      "duration": 38
-                    },
-                    {
-                      "title": "Click 'Register / Login' button",
-                      "duration": 1149
-                    },
-                    {
-                      "title": "Fill all details in Sign up and create account",
-                      "duration": 2188
-                    },
-                    {
-                      "title": "Verify 'ACCOUNT CREATED!' and click 'Continue' button",
-                      "duration": 488
-                    },
-                    {
-                      "title": "Verify ' Logged in as username' at top",
-                      "duration": 88
-                    },
-                    {
-                      "title": "Click on the cart button",
-                      "duration": 5130
-                    },
-                    {
-                      "title": "Click Proceed To Checkout",
-                      "duration": 397
-                    },
-                    {
-                      "title": "Verify Address Details and Review Your Order",
-                      "duration": 56
-                    },
-                    {
-                      "title": "Enter description in comment text area and click 'Place Order'",
-                      "duration": 1080
-                    },
-                    {
-                      "title": "Enter payment details: Name on Card, Card Number, CVC, Expiration date",
-                      "duration": 4450
-                    },
-                    {
-                      "title": "Click 'Pay and Confirm Order' button'",
-                      "duration": 1731
-                    },
-                    {
-                      "title": "Verify the success message 'Your order has been placed successfully!'",
-                      "duration": 53
-                    }
-                  ],
-                  "startTime": "2024-04-24T15:33:41.301Z",
-                  "attachments": [
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\test-results\\tests-Automation Exercise-AutomationEx-001-Verify-the-navigation-to-the-URL-Mobile-Chrome\\video.webm"
-                    },
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\test-results\\tests-Automation Exercise-AutomationEx-001-Verify-the-navigation-to-the-URL-Mobile-Chrome\\test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            },
-            {
-              "timeout": 300000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "Mobile Safari",
-              "projectName": "Mobile Safari",
-              "results": [
-                {
-                  "workerIndex": 4,
-                  "status": "passed",
-                  "duration": 29290,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "steps": [
-                    {
-                      "title": "Navigate to the Url",
-                      "duration": 5776
-                    },
-                    {
-                      "title": "Verify that home page is visible successfully",
-                      "duration": 113
-                    },
-                    {
-                      "title": "Add products to cart",
-                      "duration": 642
-                    },
-                    {
-                      "title": "Click on the cart button",
-                      "duration": 1804
-                    },
-                    {
-                      "title": "Click on the cart button",
-                      "duration": 98
-                    },
-                    {
-                      "title": "Click Proceed To Checkout",
-                      "duration": 360
-                    },
-                    {
-                      "title": "Click 'Register / Login' button",
-                      "duration": 736
-                    },
-                    {
-                      "title": "Fill all details in Sign up and create account",
-                      "duration": 10679
-                    },
-                    {
-                      "title": "Verify 'ACCOUNT CREATED!' and click 'Continue' button",
-                      "duration": 856
-                    },
-                    {
-                      "title": "Verify ' Logged in as username' at top",
-                      "duration": 136
-                    },
-                    {
-                      "title": "Click on the cart button",
-                      "duration": 713
-                    },
-                    {
-                      "title": "Click Proceed To Checkout",
-                      "duration": 801
-                    },
-                    {
-                      "title": "Verify Address Details and Review Your Order",
-                      "duration": 66
-                    },
-                    {
-                      "title": "Enter description in comment text area and click 'Place Order'",
-                      "duration": 1789
-                    },
-                    {
-                      "title": "Enter payment details: Name on Card, Card Number, CVC, Expiration date",
-                      "duration": 1114
-                    },
-                    {
-                      "title": "Click 'Pay and Confirm Order' button'",
-                      "duration": 2545
-                    },
-                    {
-                      "title": "Verify the success message 'Your order has been placed successfully!'",
-                      "duration": 168
-                    }
-                  ],
-                  "startTime": "2024-04-24T15:34:05.943Z",
-                  "attachments": [
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\test-results\\tests-Automation Exercise-AutomationEx-001-Verify-the-navigation-to-the-URL-Mobile-Safari\\video.webm"
-                    },
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\test-results\\tests-Automation Exercise-AutomationEx-001-Verify-the-navigation-to-the-URL-Mobile-Safari\\test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
+              "status": "unexpected"
             }
           ],
-          "id": "3b24793047643fa43483-c6d549fdebd569baeaf5",
+          "id": "3b24793047643fa43483-b7c216c11d19c8b32441",
           "file": "tests/Automation Exercise/AutomationEx.test.ts",
-          "line": 5,
-          "column": 5
+          "line": 54,
+          "column": 6
         }
       ]
     }
