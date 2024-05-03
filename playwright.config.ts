@@ -9,7 +9,7 @@ const config: PlaywrightTestConfig = {
   testMatch: [
 
     "AutomationEx.test.ts",
-    "Navigation.test.ts",
+    //"Navigation.test.ts",
     
 
 

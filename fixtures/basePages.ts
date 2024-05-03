@@ -3,7 +3,7 @@ import { test as baseTest } from "@playwright/test";
 import BaseFunctions from "@base-function/baseFunctions";
 import testData from "@testData/testData"
 
-import AutomationExPage from "@pages/AutomationEx.page";
+import AutomationExPage from "@pages/HookAndloop.page";
 import NavigationPage from "@pages/Navigation.page";
 
 

@@ -20,8 +20,7 @@
         "testDir": "C:/Users/munna/Documents/GitHub/Automation-ExerciseForKinetik",
         "testIgnore": [],
         "testMatch": [
-          "AutomationEx.test.ts",
-          "Navigation.test.ts"
+          "AutomationEx.test.ts"
         ],
         "timeout": 300000
       }
@@ -61,8 +60,8 @@
       "line": 0,
       "specs": [
         {
-          "title": "004 | Verify The manual vehicle selection is working properly",
-          "ok": false,
+          "title": "001 | Verify The DuraGrip Brand's Sew on products chcekout functionalities are working fine",
+          "ok": true,
           "tags": [],
           "tests": [
             {
@@ -74,70 +73,140 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "failed",
-                  "duration": 68935,
-                  "error": {
-                    "message": "Unable to find the option element from the Homepage |  Error occured: TimeoutError: locator.dblclick: Timeout 60000ms exceeded.\n=========================== logs ===========================\nwaiting for locator('xpath=(//option[@value=\\'BMW\\'])[1]')\n  locator resolved to hidden <option value=\"BMW\">BMW</option>\nattempting dblclick action\n  waiting for element to be visible, enabled and stable\n    element is not visible - waiting...\n============================================================",
-                    "stack": "Error: Unable to find the option element from the Homepage |  Error occured: TimeoutError: locator.dblclick: Timeout 60000ms exceeded.\n=========================== logs ===========================\nwaiting for locator('xpath=(//option[@value=\\'BMW\\'])[1]')\n  locator resolved to hidden <option value=\"BMW\">BMW</option>\nattempting dblclick action\n  waiting for element to be visible, enabled and stable\n    element is not visible - waiting...\n============================================================\n    at AutomationEXPage.SelectMakeDRpdownOption (C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\pages\\AutomationExPage\\AutomationEx.page.ts:112:19)\n    at C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\tests\\Automation Exercise\\AutomationEx.test.ts:63:9\n    at C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\tests\\Automation Exercise\\AutomationEx.test.ts:62:5"
-                  },
-                  "errors": [
+                  "status": "passed",
+                  "duration": 234669,
+                  "errors": [],
+                  "stdout": [
                     {
-                      "location": {
-                        "file": "C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\pages\\AutomationExPage\\AutomationEx.page.ts",
-                        "column": 19,
-                        "line": 112
-                      },
-                      "message": "Error: Unable to find the option element from the Homepage |  Error occured: TimeoutError: locator.dblclick: Timeout 60000ms exceeded.\n=========================== logs ===========================\nwaiting for locator('xpath=(//option[@value=\\'BMW\\'])[1]')\n  locator resolved to hidden <option value=\"BMW\">BMW</option>\nattempting dblclick action\n  waiting for element to be visible, enabled and stable\n    element is not visible - waiting...\n============================================================\n\n\u001b[90m   at \u001b[39mpages\\AutomationExPage\\AutomationEx.page.ts:112\n\n\u001b[0m \u001b[90m 110 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 111 |\u001b[39m         } \u001b[36mcatch\u001b[39m (error) {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 112 |\u001b[39m             \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'Unable to find the option element from the Homepage |  Error occured: '\u001b[39m \u001b[33m+\u001b[39m error)\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 113 |\u001b[39m         }\u001b[0m\n\u001b[0m \u001b[90m 114 |\u001b[39m     }\u001b[0m\n\u001b[0m \u001b[90m 115 |\u001b[39m     \u001b[36masync\u001b[39m \u001b[33mSelectModelDRpdown\u001b[39m() {\u001b[0m\n\n\u001b[2m    at AutomationEXPage.SelectMakeDRpdownOption (C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\pages\\AutomationExPage\\AutomationEx.page.ts:112:19)\u001b[22m\n\u001b[2m    at C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\tests\\Automation Exercise\\AutomationEx.test.ts:63:9\u001b[22m\n\u001b[2m    at C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\tests\\Automation Exercise\\AutomationEx.test.ts:62:5\u001b[22m"
+                      "text": "Valid URL\n"
                     }
                   ],
-                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
                   "steps": [
                     {
                       "title": "Navigate to the Url",
-                      "duration": 5150
+                      "duration": 3718
                     },
                     {
-                      "title": "Click on the Make dropdown",
-                      "duration": 222
+                      "title": "Click on the brands from the nav bar",
+                      "duration": 5349
                     },
                     {
-                      "title": "Click on the \"BMW\" OPtion",
-                      "duration": 63037,
-                      "error": {
-                        "message": "Unable to find the option element from the Homepage |  Error occured: TimeoutError: locator.dblclick: Timeout 60000ms exceeded.\n=========================== logs ===========================\nwaiting for locator('xpath=(//option[@value=\\'BMW\\'])[1]')\n  locator resolved to hidden <option value=\"BMW\">BMW</option>\nattempting dblclick action\n  waiting for element to be visible, enabled and stable\n    element is not visible - waiting...\n============================================================",
-                        "stack": "Error: Unable to find the option element from the Homepage |  Error occured: TimeoutError: locator.dblclick: Timeout 60000ms exceeded.\n=========================== logs ===========================\nwaiting for locator('xpath=(//option[@value=\\'BMW\\'])[1]')\n  locator resolved to hidden <option value=\"BMW\">BMW</option>\nattempting dblclick action\n  waiting for element to be visible, enabled and stable\n    element is not visible - waiting...\n============================================================\n    at AutomationEXPage.SelectMakeDRpdownOption (C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\pages\\AutomationExPage\\AutomationEx.page.ts:112:19)\n    at C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\tests\\Automation Exercise\\AutomationEx.test.ts:63:9\n    at C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\tests\\Automation Exercise\\AutomationEx.test.ts:62:5"
-                      }
+                      "title": "Click on the DuraGrip Sew On product",
+                      "duration": 14239
+                    },
+                    {
+                      "title": "Click on the Width option of the product",
+                      "duration": 15238
+                    },
+                    {
+                      "title": "Click on the color option of the product",
+                      "duration": 6158
+                    },
+                    {
+                      "title": "Click on the Both(Hook&Loop) option of the product",
+                      "duration": 3103
+                    },
+                    {
+                      "title": "Click on the Add to cart button",
+                      "duration": 3156
+                    },
+                    {
+                      "title": "Click on the Checkout button",
+                      "duration": 10088
+                    },
+                    {
+                      "title": "Fill the email input field",
+                      "duration": 11439
+                    },
+                    {
+                      "title": "Fill the First Name input field",
+                      "duration": 9192
+                    },
+                    {
+                      "title": "Fill the Last Name input field",
+                      "duration": 9196
+                    },
+                    {
+                      "title": "Fill the Address input field",
+                      "duration": 9193
+                    },
+                    {
+                      "title": "Select the Country",
+                      "duration": 3059
+                    },
+                    {
+                      "title": "Select the state",
+                      "duration": 3018
+                    },
+                    {
+                      "title": "Fill the city input field",
+                      "duration": 12221
+                    },
+                    {
+                      "title": "Fill the Zip input field",
+                      "duration": 12228
+                    },
+                    {
+                      "title": "Fill the phone input field",
+                      "duration": 12208
+                    },
+                    {
+                      "title": "Priority Mall Click",
+                      "duration": 12738
+                    },
+                    {
+                      "title": "Next Button Click",
+                      "duration": 12281
+                    },
+                    {
+                      "title": "Card Number Input",
+                      "duration": 12197
+                    },
+                    {
+                      "title": "Month Selection",
+                      "duration": 6047
+                    },
+                    {
+                      "title": "Year Selection",
+                      "duration": 6036
+                    },
+                    {
+                      "title": "CvC Input",
+                      "duration": 15216
+                    },
+                    {
+                      "title": "Click on the place order button",
+                      "duration": 15296
+                    },
+                    {
+                      "title": "Validate the order has been placed successfully",
+                      "duration": 9012
                     }
                   ],
-                  "startTime": "2024-04-30T15:54:20.626Z",
+                  "startTime": "2024-05-03T13:21:04.164Z",
                   "attachments": [
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\test-results\\tests-Automation Exercise-AutomationEx-004-Verify-The-manual-vehicle-selection-is-working-properly-chromium\\video.webm"
+                      "path": "C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\test-results\\tests-Automation Exercise-AutomationEx-001-Ver-3a32c-ducts-chcekout-functionalities-are-working-fine-chromium\\video.webm"
                     },
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\test-results\\tests-Automation Exercise-AutomationEx-004-Verify-The-manual-vehicle-selection-is-working-properly-chromium\\test-failed-1.png"
+                      "path": "C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\test-results\\tests-Automation Exercise-AutomationEx-001-Ver-3a32c-ducts-chcekout-functionalities-are-working-fine-chromium\\test-finished-1.png"
                     }
-                  ],
-                  "errorLocation": {
-                    "file": "C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\pages\\AutomationExPage\\AutomationEx.page.ts",
-                    "column": 19,
-                    "line": 112
-                  }
+                  ]
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
-          "id": "3b24793047643fa43483-b7c216c11d19c8b32441",
+          "id": "3b24793047643fa43483-8ce3d9aaee33750e78d9",
           "file": "tests/Automation Exercise/AutomationEx.test.ts",
-          "line": 54,
-          "column": 6
+          "line": 5,
+          "column": 5
         }
       ]
     }
