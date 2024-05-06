@@ -42,7 +42,7 @@ export default class AutomationEXPage {
         OrderSuccess:"page-title-wrapper",
         VelcroSewon:"(//dd[@class='velcro even']//span)[1]",
         velcrocolor:"//div[@class='swatch-option image']",
-        VelcroLoop:"//div[@aria-label='Loop']",
+         VelcroLoop:"//div[@aria-label='Loop']",
         duragripPeelSteal:"(//dd[@class='brands odd']//span)[2]",
         RubberClic:"//div[@aria-label='Rubber']",
         pealBlack:"//div[@aria-label='Black']",
