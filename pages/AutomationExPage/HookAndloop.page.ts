@@ -40,6 +40,12 @@ export default class AutomationEXPage {
         PlaceOrder:"(//button[@title='Place Order'])[1]",
         No:"//body[contains(@class,'pl-thm-raveinfosys pl-thm-raveinfosys-hookandloop')]",
         OrderSuccess:"page-title-wrapper",
+        VelcroSewon:"(//dd[@class='velcro even']//span)[1]",
+        velcrocolor:"//div[@class='swatch-option image']",
+        VelcroLoop:"//div[@aria-label='Loop']",
+        duragripPeelSteal:"(//dd[@class='brands odd']//span)[2]",
+        RubberClic:"//div[@aria-label='Rubber']",
+        pealBlack:"//div[@aria-label='Black']",
 
        
 
@@ -84,7 +90,7 @@ export default class AutomationEXPage {
 
         try {
             await this.page.waitForTimeout(3000)
-            await ele.click()
+            await ele.click({force:true,delay:100})
 
 
         } catch (error) {
@@ -487,6 +493,97 @@ export default class AutomationEXPage {
         console.log('Invalid URL');
     }
 }
+async velcroSewonClick() {
+    const ele = this.page.locator(this.AutomationEx_page_elements.VelcroSewon)
+
+    try {
+        await this.page.waitForTimeout(6000)
+        await ele.isVisible()
+        await this.page.waitForTimeout(3000)
+        await ele.click({force:true,delay:100})
+        await this.page.waitForTimeout(3000)
+
+
+    } catch (error) {
+        throw new Error('Unable to find the Velcro sew on Element from the checkout |  Error occured: ' + error)
+    }
+}
+async velcroSewoncolorClick() {
+    const ele = this.page.locator(this.AutomationEx_page_elements.velcrocolor)
+
+    try {
+        await this.page.waitForTimeout(6000)
+        await ele.isVisible()
+        await this.page.waitForTimeout(3000)
+        await ele.click({force:true,delay:100})
+        await this.page.waitForTimeout(3000)
+
+
+    } catch (error) {
+        throw new Error('Unable to find the Velcro sew on color Element from the checkout |  Error occured: ' + error)
+    }
+}
+async velcroSewonloopClick() {
+    const ele = this.page.locator(this.AutomationEx_page_elements.VelcroLoop)
+
+    try {
+        await this.page.waitForTimeout(6000)
+        await ele.isVisible()
+        await this.page.waitForTimeout(3000)
+        await ele.click({force:true,delay:100})
+        await this.page.waitForTimeout(3000)
+
+
+    } catch (error) {
+        throw new Error('Unable to find the Velcro sew on loop Element from the checkout |  Error occured: ' + error)
+    }
+}
+async DuragripPealandstealClick() {
+    const ele = this.page.locator(this.AutomationEx_page_elements.duragripPeelSteal)
+
+    try {
+        await this.page.waitForTimeout(6000)
+        await ele.isVisible()
+        await this.page.waitForTimeout(3000)
+        await ele.click({force:true,delay:100})
+        await this.page.waitForTimeout(3000)
+
+
+    } catch (error) {
+        throw new Error('Unable to find the Velcro sew on loop Element from the checkout |  Error occured: ' + error)
+    }
+}
+async rubberClick() {
+    const ele = this.page.locator(this.AutomationEx_page_elements.RubberClic)
+
+    try {
+        await this.page.waitForTimeout(6000)
+        await ele.isVisible()
+        await this.page.waitForTimeout(3000)
+        await ele.click({force:true,delay:100})
+        await this.page.waitForTimeout(3000)
+
+
+    } catch (error) {
+        throw new Error('Unable to find the Velcro sew on loop Element from the checkout |  Error occured: ' + error)
+    }
+}
+async pealblackClick() {
+    const ele = this.page.locator(this.AutomationEx_page_elements.pealBlack)
+
+    try {
+        await this.page.waitForTimeout(6000)
+        await ele.isVisible()
+        await this.page.waitForTimeout(3000)
+        await ele.click({force:true,delay:100})
+        await this.page.waitForTimeout(3000)
+
+
+    } catch (error) {
+        throw new Error('Unable to find the Velcro sew on loop Element from the checkout |  Error occured: ' + error)
+    }
+}
+
 
 }
 
