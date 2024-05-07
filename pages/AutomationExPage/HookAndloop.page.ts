@@ -46,6 +46,10 @@ export default class AutomationEXPage {
         duragripPeelSteal:"(//dd[@class='brands odd']//span)[2]",
         RubberClic:"//div[@aria-label='Rubber']",
         pealBlack:"//div[@aria-label='Black']",
+        velcroPealandseal:"(//dd[@class='velcro even']//span)[2]",
+        fourinch:"//div[@aria-label='4']",
+        coins:"(//span[text()='Coins'])[3]",
+        coinswidth:"//div[@aria-label='1 7/8']",
 
        
 
@@ -147,10 +151,11 @@ export default class AutomationEXPage {
         const ele = this.page.locator(this.AutomationEx_page_elements.ChkoutEmail)
 
         try {
-            await this.page.waitForTimeout(8000)
+            await this.page.waitForTimeout(10000)
             await ele.isVisible()
             await ele.dblclick({force:true, delay:100})
             await ele.fill("Test@test.com")
+            await this.page.waitForTimeout(3000)
 
 
         } catch (error) {
@@ -581,6 +586,66 @@ async pealblackClick() {
 
     } catch (error) {
         throw new Error('Unable to find the Velcro sew on loop Element from the checkout |  Error occured: ' + error)
+    }
+}
+async VelcropealClick() {
+    const ele = this.page.locator(this.AutomationEx_page_elements.velcroPealandseal)
+
+    try {
+        await this.page.waitForTimeout(6000)
+        await ele.isVisible()
+        await this.page.waitForTimeout(3000)
+        await ele.click({force:true,delay:100})
+        await this.page.waitForTimeout(3000)
+
+
+    } catch (error) {
+        throw new Error('Unable to find the Velcro peal and stick Element from the checkout |  Error occured: ' + error)
+    }
+}
+async fourinchClick() {
+    const ele = this.page.locator(this.AutomationEx_page_elements.fourinch)
+
+    try {
+        await this.page.waitForTimeout(6000)
+        await ele.isVisible()
+        await this.page.waitForTimeout(3000)
+        await ele.click({force:true,delay:100})
+        await this.page.waitForTimeout(3000)
+
+
+    } catch (error) {
+        throw new Error('Unable to find the Velcro 4 inch Element from the checkout |  Error occured: ' + error)
+    }
+}
+async coinsClick() {
+    const ele = this.page.locator(this.AutomationEx_page_elements.coins)
+
+    try {
+        await this.page.waitForTimeout(6000)
+        await ele.isVisible()
+        await this.page.waitForTimeout(3000)
+        await ele.click({force:true,delay:100})
+        await this.page.waitForTimeout(3000)
+
+
+    } catch (error) {
+        throw new Error('Unable to find the coins Element from the checkout |  Error occured: ' + error)
+    }
+}
+async coinswidthClick() {
+    const ele = this.page.locator(this.AutomationEx_page_elements.coinswidth)
+
+    try {
+        await this.page.waitForTimeout(6000)
+        await ele.isVisible()
+        await this.page.waitForTimeout(3000)
+        await ele.click({force:true,delay:100})
+        await this.page.waitForTimeout(6000)
+
+
+    } catch (error) {
+        throw new Error('Unable to find the Velcro 4 inch Element from the checkout |  Error occured: ' + error)
     }
 }
 

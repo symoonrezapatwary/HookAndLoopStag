@@ -60,7 +60,7 @@
       "line": 0,
       "specs": [
         {
-          "title": "001 | Verify The DuraGrip Brand's Sew on products chcekout functionalities are working fine",
+          "title": "005 | Verify The duragrip Brand's coins products chcekout functionalities are working fine",
           "ok": true,
           "tags": [],
           "tests": [
@@ -74,7 +74,7 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 289040,
+                  "duration": 288223,
                   "errors": [],
                   "stdout": [
                     {
@@ -86,116 +86,116 @@
                   "steps": [
                     {
                       "title": "Navigate to the Url",
-                      "duration": 3230
+                      "duration": 3371
                     },
                     {
                       "title": "Click on the brands from the nav bar",
-                      "duration": 5727
+                      "duration": 1913
                     },
                     {
                       "title": "Click on the DuraGrip Sew On product",
-                      "duration": 58815
+                      "duration": 36544
                     },
                     {
                       "title": "Click on the Width option of the product",
-                      "duration": 7485
+                      "duration": 18290
                     },
                     {
                       "title": "Click on the color option of the product",
-                      "duration": 6223
+                      "duration": 15241
                     },
                     {
                       "title": "Click on the Both(Hook&Loop) option of the product",
-                      "duration": 3116
+                      "duration": 15299
                     },
                     {
                       "title": "Click on the Add to cart button",
-                      "duration": 3155
+                      "duration": 3239
                     },
                     {
                       "title": "Click on the Checkout button",
-                      "duration": 30255
+                      "duration": 17170
                     },
                     {
                       "title": "Fill the email input field",
-                      "duration": 11438
+                      "duration": 16479
                     },
                     {
                       "title": "Fill the First Name input field",
-                      "duration": 9163
+                      "duration": 9214
                     },
                     {
                       "title": "Fill the Last Name input field",
-                      "duration": 9205
+                      "duration": 9190
                     },
                     {
                       "title": "Fill the Address input field",
-                      "duration": 9196
+                      "duration": 9209
                     },
                     {
                       "title": "Select the Country",
-                      "duration": 3056
+                      "duration": 3055
                     },
                     {
                       "title": "Select the state",
-                      "duration": 3027
+                      "duration": 3032
                     },
                     {
                       "title": "Fill the city input field",
-                      "duration": 12224
+                      "duration": 12223
                     },
                     {
                       "title": "Fill the Zip input field",
+                      "duration": 12233
+                    },
+                    {
+                      "title": "Fill the phone input field",
                       "duration": 12220
                     },
                     {
-                      "title": "Fill the phone input field",
-                      "duration": 12221
-                    },
-                    {
                       "title": "Priority Mall Click",
-                      "duration": 12754
+                      "duration": 12742
                     },
                     {
                       "title": "Next Button Click",
-                      "duration": 12243
+                      "duration": 12282
                     },
                     {
                       "title": "Card Number Input",
-                      "duration": 12189
+                      "duration": 12200
                     },
                     {
                       "title": "Month Selection",
-                      "duration": 6037
+                      "duration": 6055
                     },
                     {
                       "title": "Year Selection",
-                      "duration": 6032
+                      "duration": 6038
                     },
                     {
                       "title": "CvC Input",
-                      "duration": 15183
+                      "duration": 15235
                     },
                     {
                       "title": "Click on the place order button",
-                      "duration": 15320
+                      "duration": 15351
                     },
                     {
                       "title": "Validate the order has been placed successfully",
-                      "duration": 9013
+                      "duration": 9031
                     }
                   ],
-                  "startTime": "2024-05-06T14:10:02.738Z",
+                  "startTime": "2024-05-07T14:21:20.652Z",
                   "attachments": [
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\test-results\\tests-Automation Exercise-AutomationEx-001-Ver-3a32c-ducts-chcekout-functionalities-are-working-fine-chromium\\video.webm"
+                      "path": "C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\test-results\\tests-Automation Exercise-AutomationEx-005-Ver-18b74-ducts-chcekout-functionalities-are-working-fine-chromium\\video.webm"
                     },
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\test-results\\tests-Automation Exercise-AutomationEx-001-Ver-3a32c-ducts-chcekout-functionalities-are-working-fine-chromium\\test-finished-1.png"
+                      "path": "C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\test-results\\tests-Automation Exercise-AutomationEx-005-Ver-18b74-ducts-chcekout-functionalities-are-working-fine-chromium\\test-finished-1.png"
                     }
                   ]
                 }
@@ -203,308 +203,10 @@
               "status": "expected"
             }
           ],
-          "id": "3b24793047643fa43483-8ce3d9aaee33750e78d9",
+          "id": "3b24793047643fa43483-eb66e816e61964f52b61",
           "file": "tests/Automation Exercise/AutomationEx.test.ts",
-          "line": 5,
-          "column": 5
-        },
-        {
-          "title": "002 | Verify The velcro Brand's Sew on products chcekout functionalities are working fine",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 300000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 246718,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "Valid URL\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "steps": [
-                    {
-                      "title": "Navigate to the Url",
-                      "duration": 2476
-                    },
-                    {
-                      "title": "Click on the brands from the nav bar",
-                      "duration": 5987
-                    },
-                    {
-                      "title": "Click on the DuraGrip Sew On product",
-                      "duration": 19736
-                    },
-                    {
-                      "title": "Click on the Width option of the product",
-                      "duration": 6174
-                    },
-                    {
-                      "title": "Click on the color option of the product",
-                      "duration": 15243
-                    },
-                    {
-                      "title": "Click on the Both(Hook&Loop) option of the product",
-                      "duration": 15277
-                    },
-                    {
-                      "title": "Click on the Add to cart button",
-                      "duration": 3171
-                    },
-                    {
-                      "title": "Click on the Checkout button",
-                      "duration": 7537
-                    },
-                    {
-                      "title": "Fill the email input field",
-                      "duration": 11423
-                    },
-                    {
-                      "title": "Fill the First Name input field",
-                      "duration": 9176
-                    },
-                    {
-                      "title": "Fill the Last Name input field",
-                      "duration": 9224
-                    },
-                    {
-                      "title": "Fill the Address input field",
-                      "duration": 9198
-                    },
-                    {
-                      "title": "Select the Country",
-                      "duration": 3064
-                    },
-                    {
-                      "title": "Select the state",
-                      "duration": 3021
-                    },
-                    {
-                      "title": "Fill the city input field",
-                      "duration": 12209
-                    },
-                    {
-                      "title": "Fill the Zip input field",
-                      "duration": 12217
-                    },
-                    {
-                      "title": "Fill the phone input field",
-                      "duration": 12199
-                    },
-                    {
-                      "title": "Priority Mall Click",
-                      "duration": 12745
-                    },
-                    {
-                      "title": "Next Button Click",
-                      "duration": 12280
-                    },
-                    {
-                      "title": "Card Number Input",
-                      "duration": 12192
-                    },
-                    {
-                      "title": "Month Selection",
-                      "duration": 6049
-                    },
-                    {
-                      "title": "Year Selection",
-                      "duration": 6035
-                    },
-                    {
-                      "title": "CvC Input",
-                      "duration": 15217
-                    },
-                    {
-                      "title": "Click on the place order button",
-                      "duration": 15325
-                    },
-                    {
-                      "title": "Validate the order has been placed successfully",
-                      "duration": 9013
-                    }
-                  ],
-                  "startTime": "2024-05-06T14:14:52.328Z",
-                  "attachments": [
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\test-results\\tests-Automation Exercise-AutomationEx-002-Ver-2e222-ducts-chcekout-functionalities-are-working-fine-chromium\\video.webm"
-                    },
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\test-results\\tests-Automation Exercise-AutomationEx-002-Ver-2e222-ducts-chcekout-functionalities-are-working-fine-chromium\\test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "3b24793047643fa43483-f63e6aaf4097dd26d974",
-          "file": "tests/Automation Exercise/AutomationEx.test.ts",
-          "line": 155,
-          "column": 5
-        },
-        {
-          "title": "003 | Verify The duragrip Brand's peal and steal products chcekout functionalities are working fine",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 300000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 279180,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "Valid URL\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "steps": [
-                    {
-                      "title": "Navigate to the Url",
-                      "duration": 3385
-                    },
-                    {
-                      "title": "Click on the brands from the nav bar",
-                      "duration": 1009
-                    },
-                    {
-                      "title": "Click on the DuraGrip Sew On product",
-                      "duration": 36892
-                    },
-                    {
-                      "title": "Click on the Width option of the product",
-                      "duration": 13348
-                    },
-                    {
-                      "title": "Click on the color option of the product",
-                      "duration": 15220
-                    },
-                    {
-                      "title": "Click on the Both(Hook&Loop) option of the product",
-                      "duration": 27446
-                    },
-                    {
-                      "title": "Click on the Add to cart button",
-                      "duration": 3187
-                    },
-                    {
-                      "title": "Click on the Checkout button",
-                      "duration": 7543
-                    },
-                    {
-                      "title": "Fill the email input field",
-                      "duration": 11446
-                    },
-                    {
-                      "title": "Fill the First Name input field",
-                      "duration": 9186
-                    },
-                    {
-                      "title": "Fill the Last Name input field",
-                      "duration": 9216
-                    },
-                    {
-                      "title": "Fill the Address input field",
-                      "duration": 9200
-                    },
-                    {
-                      "title": "Select the Country",
-                      "duration": 3047
-                    },
-                    {
-                      "title": "Select the state",
-                      "duration": 3036
-                    },
-                    {
-                      "title": "Fill the city input field",
-                      "duration": 12202
-                    },
-                    {
-                      "title": "Fill the Zip input field",
-                      "duration": 12211
-                    },
-                    {
-                      "title": "Fill the phone input field",
-                      "duration": 12216
-                    },
-                    {
-                      "title": "Priority Mall Click",
-                      "duration": 12745
-                    },
-                    {
-                      "title": "Next Button Click",
-                      "duration": 12262
-                    },
-                    {
-                      "title": "Card Number Input",
-                      "duration": 12207
-                    },
-                    {
-                      "title": "Month Selection",
-                      "duration": 6062
-                    },
-                    {
-                      "title": "Year Selection",
-                      "duration": 6028
-                    },
-                    {
-                      "title": "CvC Input",
-                      "duration": 15213
-                    },
-                    {
-                      "title": "Click on the place order button",
-                      "duration": 15331
-                    },
-                    {
-                      "title": "Validate the order has been placed successfully",
-                      "duration": 9010
-                    }
-                  ],
-                  "startTime": "2024-05-06T14:18:59.050Z",
-                  "attachments": [
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\test-results\\tests-Automation Exercise-AutomationEx-003-Ver-11579-ducts-chcekout-functionalities-are-working-fine-chromium\\video.webm"
-                    },
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\test-results\\tests-Automation Exercise-AutomationEx-003-Ver-11579-ducts-chcekout-functionalities-are-working-fine-chromium\\test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "3b24793047643fa43483-54e1dee04a66ffc386e3",
-          "file": "tests/Automation Exercise/AutomationEx.test.ts",
-          "line": 304,
-          "column": 5
+          "line": 604,
+          "column": 6
         }
       ]
     }
