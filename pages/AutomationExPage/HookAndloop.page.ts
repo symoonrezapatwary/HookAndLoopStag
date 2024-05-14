@@ -50,6 +50,12 @@ export default class AutomationEXPage {
         fourinch:"//div[@aria-label='4']",
         coins:"(//span[text()='Coins'])[3]",
         coinswidth:"//div[@aria-label='1 7/8']",
+        mobilebrands:"//a[.='Brands']",
+        mobilecoins:"(//span[text()='Coins'])[1]",
+        Menubar:"//span[@class='action nav-toggle']",
+        Velmblsewon:"//a[@href='https://dev2.hookandloop.com/hook-and-loop-brands/velcro/sew-on']",
+        duramblsewon:"(//span[text()='Sew On'])[1]",
+        duramblPealStck:"(//span[text()='Peel & Stick'])[1]",
 
        
 
@@ -93,7 +99,7 @@ export default class AutomationEXPage {
         const ele = this.page.locator(this.AutomationEx_page_elements.Width)
 
         try {
-            await this.page.waitForTimeout(3000)
+            await this.page.waitForSelector(this.AutomationEx_page_elements.Width)
             await ele.click({force:true,delay:100})
 
 
@@ -380,7 +386,6 @@ export default class AutomationEXPage {
         try {
             await this.page.waitForTimeout(6000)
             await ele.isVisible()
-            await this.page.waitForTimeout(3000)
             await ele.click({force:true, delay:100})
             await ele.fill("5424000000000015")
 
@@ -443,9 +448,9 @@ export default class AutomationEXPage {
         const ele = this.page.locator(this.AutomationEx_page_elements.PlaceOrder)
 
         try {
-            await this.page.waitForTimeout(3000)
+             await this.page.waitForTimeout(3000)
             await ele.isVisible()
-            await this.page.waitForTimeout(3000)
+            // await this.page.waitForTimeout(3000)
             await ele.click({force:true, delay:100})
 
 
@@ -648,9 +653,126 @@ async coinswidthClick() {
         throw new Error('Unable to find the Velcro 4 inch Element from the checkout |  Error occured: ' + error)
     }
 }
+async MblBrandsClick() {
+    const ele = this.page.locator(this.AutomationEx_page_elements.mobilebrands)
 
+    try {
+       
+        await ele.isVisible()
+         await this.page.waitForTimeout(6000)
+        await ele.click({force:true,delay:100})
+         await this.page.waitForTimeout(6000)
+        await ele.click({force:true,delay:100})
+
+
+    } catch (error) {
+        throw new Error('Unable to find the Brands Element from the checkout |  Error occured: ' + error)
+    }
+}
+async MblcoinsClick() {
+    const ele = this.page.locator(this.AutomationEx_page_elements.mobilecoins)
+
+    try {
+        // await this.page.waitForTimeout(6000)
+        await ele.isVisible()
+        // await this.page.waitForTimeout(3000)
+        await ele.click({force:true,delay:100})
+        // await this.page.waitForTimeout(6000)
+
+
+    } catch (error) {
+        throw new Error('Unable to find the coins Element from the checkout |  Error occured: ' + error)
+    }
+}
+async MenuClick() {
+    const ele = this.page.locator(this.AutomationEx_page_elements.Menubar)
+
+    try {
+         await this.page.waitForTimeout(6000)
+        await ele.isVisible()
+         await this.page.waitForTimeout(6000)
+        await ele.dblclick({force:true,delay:100})
+         await this.page.waitForTimeout(6000)
+        await ele.click({force:true,delay:300})
+        await this.page.waitForTimeout(6000)
+
+
+    } catch (error) {
+        throw new Error('Unable to find the menu Element from the checkout |  Error occured: ' + error)
+    }
+}
+async MblvelcroSewonClick() {
+    const ele = this.page.locator(this.AutomationEx_page_elements.Velmblsewon)
+
+    try {
+         await this.page.waitForTimeout(3000)
+        await ele.isVisible()
+         await this.page.waitForTimeout(3000)
+        await ele.click()
+         await this.page.waitForTimeout(3000)
+         await this.page.waitForTimeout(20000)
+       
+
+
+    } catch (error) {
+        throw new Error('Unable to find the velcro sew on Element from the checkout |  Error occured: ' + error)
+    }
+}
+async MblduraSewonClick() {
+    const ele = this.page.locator(this.AutomationEx_page_elements.duramblsewon)
+
+    try {
+         await this.page.waitForTimeout(3000)
+        await ele.isVisible()
+         await this.page.waitForTimeout(3000)
+        await ele.click()
+         await this.page.waitForTimeout(3000)
+         await this.page.waitForTimeout(20000)
+       
+
+
+    } catch (error) {
+        throw new Error('Unable to find the velcro sew on Element from the checkout |  Error occured: ' + error)
+    }
+}
+async MbldurapealandStickClick() {
+    const ele = this.page.locator(this.AutomationEx_page_elements.duramblPealStck)
+
+    try {
+         await this.page.waitForTimeout(3000)
+        await ele.isVisible()
+         await this.page.waitForTimeout(3000)
+        await ele.click()
+         await this.page.waitForTimeout(3000)
+         await this.page.waitForTimeout(20000)
+       
+
+
+    } catch (error) {
+        throw new Error('Unable to find the velcro sew on Element from the checkout |  Error occured: ' + error)
+    }
+}
+async scrollPage(page: Page, direction: 'down' | 'up') {
+    const distance = direction === 'down' ? 100 : -100;
+    await page.evaluate(async (distance) => {
+      await new Promise<void>((resolve, reject) => {
+        const scrollInterval = setInterval(() => {
+          const currentY = window.scrollY;
+          window.scrollBy(0, distance);
+          if (distance > 0 && currentY >= document.body.scrollHeight - window.innerHeight) {
+            clearInterval(scrollInterval);
+            resolve();
+          } else if (distance < 0 && currentY === 0) {
+            clearInterval(scrollInterval);
+            resolve();
+          }
+        }, 100); // Adjust the interval as needed
+      });
+    }, distance);
+  }
 
 }
+
 
 
 

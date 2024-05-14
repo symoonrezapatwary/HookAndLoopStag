@@ -22,7 +22,7 @@
         "testMatch": [
           "AutomationEx.test.ts"
         ],
-        "timeout": 300000
+        "timeout": 400000
       }
     ],
     "reporter": [
@@ -65,7 +65,7 @@
           "tags": [],
           "tests": [
             {
-              "timeout": 300000,
+              "timeout": 400000,
               "annotations": [],
               "expectedStatus": "passed",
               "projectId": "chromium",
@@ -74,7 +74,7 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 288223,
+                  "duration": 262933,
                   "errors": [],
                   "stdout": [
                     {
@@ -86,106 +86,106 @@
                   "steps": [
                     {
                       "title": "Navigate to the Url",
-                      "duration": 3371
+                      "duration": 2470
                     },
                     {
                       "title": "Click on the brands from the nav bar",
-                      "duration": 1913
+                      "duration": 5469
                     },
                     {
                       "title": "Click on the DuraGrip Sew On product",
-                      "duration": 36544
+                      "duration": 21045
                     },
                     {
                       "title": "Click on the Width option of the product",
-                      "duration": 18290
+                      "duration": 18205
                     },
                     {
                       "title": "Click on the color option of the product",
-                      "duration": 15241
+                      "duration": 15217
                     },
                     {
                       "title": "Click on the Both(Hook&Loop) option of the product",
-                      "duration": 15299
+                      "duration": 15250
                     },
                     {
                       "title": "Click on the Add to cart button",
-                      "duration": 3239
+                      "duration": 3177
                     },
                     {
                       "title": "Click on the Checkout button",
-                      "duration": 17170
+                      "duration": 12071
                     },
                     {
                       "title": "Fill the email input field",
-                      "duration": 16479
+                      "duration": 16438
                     },
                     {
                       "title": "Fill the First Name input field",
-                      "duration": 9214
+                      "duration": 9182
                     },
                     {
                       "title": "Fill the Last Name input field",
-                      "duration": 9190
+                      "duration": 9183
                     },
                     {
                       "title": "Fill the Address input field",
-                      "duration": 9209
+                      "duration": 9171
                     },
                     {
                       "title": "Select the Country",
-                      "duration": 3055
+                      "duration": 3050
                     },
                     {
                       "title": "Select the state",
-                      "duration": 3032
+                      "duration": 3028
                     },
                     {
                       "title": "Fill the city input field",
-                      "duration": 12223
+                      "duration": 12198
                     },
                     {
                       "title": "Fill the Zip input field",
-                      "duration": 12233
+                      "duration": 12185
                     },
                     {
                       "title": "Fill the phone input field",
-                      "duration": 12220
+                      "duration": 12195
                     },
                     {
                       "title": "Priority Mall Click",
-                      "duration": 12742
+                      "duration": 12725
                     },
                     {
                       "title": "Next Button Click",
-                      "duration": 12282
+                      "duration": 12260
                     },
                     {
                       "title": "Card Number Input",
-                      "duration": 12200
+                      "duration": 9170
                     },
                     {
                       "title": "Month Selection",
-                      "duration": 6055
+                      "duration": 6042
                     },
                     {
                       "title": "Year Selection",
-                      "duration": 6038
+                      "duration": 6039
                     },
                     {
                       "title": "CvC Input",
-                      "duration": 15235
+                      "duration": 15208
                     },
                     {
                       "title": "Click on the place order button",
-                      "duration": 15351
+                      "duration": 12252
                     },
                     {
                       "title": "Validate the order has been placed successfully",
-                      "duration": 9031
+                      "duration": 9020
                     }
                   ],
-                  "startTime": "2024-05-07T14:21:20.652Z",
+                  "startTime": "2024-05-14T07:37:16.782Z",
                   "attachments": [
                     {
                       "name": "video",
@@ -205,7 +205,7 @@
           ],
           "id": "3b24793047643fa43483-eb66e816e61964f52b61",
           "file": "tests/Automation Exercise/AutomationEx.test.ts",
-          "line": 604,
+          "line": 605,
           "column": 6
         }
       ]

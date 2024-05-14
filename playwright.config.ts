@@ -9,12 +9,12 @@ const config: PlaywrightTestConfig = {
   testMatch: [
 
     "AutomationEx.test.ts",
-    //"Navigation.test.ts",
+    // "Navigation.test.mobile.ts",
     
 
 
   ],
-  timeout: 1 * 30 * 10000,
+  timeout: 1 * 40 * 10000,
   expect: {
     timeout: 25000
 
@@ -104,7 +104,7 @@ const config: PlaywrightTestConfig = {
     //   },
 
     // },
-    // /* Test against mobile viewports. */
+    /* Test against mobile viewports. */
     // {
     //   name: 'Mobile Chrome',
     //   use: { ...devices['Pixel 5'] ,launchOptions: {headless:false}}
