@@ -60,8 +60,8 @@
       "line": 0,
       "specs": [
         {
-          "title": "005 | Verify The duragrip Brand's coins products chcekout functionalities are working fine",
-          "ok": true,
+          "title": "010 | Verify The duragrip Brand's straps products chcekout functionalities are working fine",
+          "ok": false,
           "tags": [],
           "tests": [
             {
@@ -73,139 +73,81 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 262933,
-                  "errors": [],
-                  "stdout": [
+                  "status": "failed",
+                  "duration": 101365,
+                  "error": {
+                    "message": "Unable to find the Add To Checkout Button Element from the PDP |  Error occured: TimeoutError: locator.click: Timeout 60000ms exceeded.\n=========================== logs ===========================\nwaiting for locator('xpath=//span[text()=\\'Checkout\\']')\n============================================================",
+                    "stack": "Error: Unable to find the Add To Checkout Button Element from the PDP |  Error occured: TimeoutError: locator.click: Timeout 60000ms exceeded.\n=========================== logs ===========================\nwaiting for locator('xpath=//span[text()=\\'Checkout\\']')\n============================================================\n    at AutomationEXPage.ChkOutBTN_click (C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\pages\\AutomationExPage\\HookAndloop.page.ts:173:19)\n    at C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\tests\\Automation Exercise\\AutomationEx.test.ts:792:5\n    at C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\tests\\Automation Exercise\\AutomationEx.test.ts:790:5"
+                  },
+                  "errors": [
                     {
-                      "text": "Valid URL\n"
+                      "location": {
+                        "file": "C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\pages\\AutomationExPage\\HookAndloop.page.ts",
+                        "column": 19,
+                        "line": 173
+                      },
+                      "message": "Error: Unable to find the Add To Checkout Button Element from the PDP |  Error occured: TimeoutError: locator.click: Timeout 60000ms exceeded.\n=========================== logs ===========================\nwaiting for locator('xpath=//span[text()=\\'Checkout\\']')\n============================================================\n\n\u001b[90m   at \u001b[39mpages\\AutomationExPage\\HookAndloop.page.ts:173\n\n\u001b[0m \u001b[90m 171 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 172 |\u001b[39m         } \u001b[36mcatch\u001b[39m (error) {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 173 |\u001b[39m             \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'Unable to find the Add To Checkout Button Element from the PDP |  Error occured: '\u001b[39m \u001b[33m+\u001b[39m error)\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 174 |\u001b[39m         }\u001b[0m\n\u001b[0m \u001b[90m 175 |\u001b[39m     }\u001b[0m\n\u001b[0m \u001b[90m 176 |\u001b[39m     \u001b[36masync\u001b[39m \u001b[33mEmail_input\u001b[39m() {\u001b[0m\n\n\u001b[2m    at AutomationEXPage.ChkOutBTN_click (C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\pages\\AutomationExPage\\HookAndloop.page.ts:173:19)\u001b[22m\n\u001b[2m    at C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\tests\\Automation Exercise\\AutomationEx.test.ts:792:5\u001b[22m\n\u001b[2m    at C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\tests\\Automation Exercise\\AutomationEx.test.ts:790:5\u001b[22m"
                     }
                   ],
+                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
                   "steps": [
                     {
                       "title": "Navigate to the Url",
-                      "duration": 2470
+                      "duration": 2574
                     },
                     {
                       "title": "Click on the brands from the nav bar",
-                      "duration": 5469
+                      "duration": 1321
                     },
                     {
                       "title": "Click on the DuraGrip Sew On product",
-                      "duration": 21045
+                      "duration": 12235
                     },
                     {
                       "title": "Click on the Width option of the product",
-                      "duration": 18205
-                    },
-                    {
-                      "title": "Click on the color option of the product",
-                      "duration": 15217
-                    },
-                    {
-                      "title": "Click on the Both(Hook&Loop) option of the product",
-                      "duration": 15250
+                      "duration": 16445
                     },
                     {
                       "title": "Click on the Add to cart button",
-                      "duration": 3177
+                      "duration": 803
                     },
                     {
                       "title": "Click on the Checkout button",
-                      "duration": 12071
-                    },
-                    {
-                      "title": "Fill the email input field",
-                      "duration": 16438
-                    },
-                    {
-                      "title": "Fill the First Name input field",
-                      "duration": 9182
-                    },
-                    {
-                      "title": "Fill the Last Name input field",
-                      "duration": 9183
-                    },
-                    {
-                      "title": "Fill the Address input field",
-                      "duration": 9171
-                    },
-                    {
-                      "title": "Select the Country",
-                      "duration": 3050
-                    },
-                    {
-                      "title": "Select the state",
-                      "duration": 3028
-                    },
-                    {
-                      "title": "Fill the city input field",
-                      "duration": 12198
-                    },
-                    {
-                      "title": "Fill the Zip input field",
-                      "duration": 12185
-                    },
-                    {
-                      "title": "Fill the phone input field",
-                      "duration": 12195
-                    },
-                    {
-                      "title": "Priority Mall Click",
-                      "duration": 12725
-                    },
-                    {
-                      "title": "Next Button Click",
-                      "duration": 12260
-                    },
-                    {
-                      "title": "Card Number Input",
-                      "duration": 9170
-                    },
-                    {
-                      "title": "Month Selection",
-                      "duration": 6042
-                    },
-                    {
-                      "title": "Year Selection",
-                      "duration": 6039
-                    },
-                    {
-                      "title": "CvC Input",
-                      "duration": 15208
-                    },
-                    {
-                      "title": "Click on the place order button",
-                      "duration": 12252
-                    },
-                    {
-                      "title": "Validate the order has been placed successfully",
-                      "duration": 9020
+                      "duration": 66025,
+                      "error": {
+                        "message": "Unable to find the Add To Checkout Button Element from the PDP |  Error occured: TimeoutError: locator.click: Timeout 60000ms exceeded.\n=========================== logs ===========================\nwaiting for locator('xpath=//span[text()=\\'Checkout\\']')\n============================================================",
+                        "stack": "Error: Unable to find the Add To Checkout Button Element from the PDP |  Error occured: TimeoutError: locator.click: Timeout 60000ms exceeded.\n=========================== logs ===========================\nwaiting for locator('xpath=//span[text()=\\'Checkout\\']')\n============================================================\n    at AutomationEXPage.ChkOutBTN_click (C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\pages\\AutomationExPage\\HookAndloop.page.ts:173:19)\n    at C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\tests\\Automation Exercise\\AutomationEx.test.ts:792:5\n    at C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\tests\\Automation Exercise\\AutomationEx.test.ts:790:5"
+                      }
                     }
                   ],
-                  "startTime": "2024-05-14T07:37:16.782Z",
+                  "startTime": "2024-05-16T10:40:56.839Z",
                   "attachments": [
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\test-results\\tests-Automation Exercise-AutomationEx-005-Ver-18b74-ducts-chcekout-functionalities-are-working-fine-chromium\\video.webm"
+                      "path": "C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\test-results\\tests-Automation Exercise-AutomationEx-010-Ver-85e07-ducts-chcekout-functionalities-are-working-fine-chromium\\video.webm"
                     },
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\test-results\\tests-Automation Exercise-AutomationEx-005-Ver-18b74-ducts-chcekout-functionalities-are-working-fine-chromium\\test-finished-1.png"
+                      "path": "C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\test-results\\tests-Automation Exercise-AutomationEx-010-Ver-85e07-ducts-chcekout-functionalities-are-working-fine-chromium\\test-failed-1.png"
                     }
-                  ]
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\pages\\AutomationExPage\\HookAndloop.page.ts",
+                    "column": 19,
+                    "line": 173
+                  }
                 }
               ],
-              "status": "expected"
+              "status": "unexpected"
             }
           ],
-          "id": "3b24793047643fa43483-eb66e816e61964f52b61",
+          "id": "3b24793047643fa43483-26797ecba5ae16b0c454",
           "file": "tests/Automation Exercise/AutomationEx.test.ts",
-          "line": 605,
+          "line": 761,
           "column": 6
         }
       ]

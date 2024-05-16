@@ -56,6 +56,11 @@ export default class AutomationEXPage {
         Velmblsewon:"//a[@href='https://dev2.hookandloop.com/hook-and-loop-brands/velcro/sew-on']",
         duramblsewon:"(//span[text()='Sew On'])[1]",
         duramblPealStck:"(//span[text()='Peel & Stick'])[1]",
+        straps:"//a[@href='https://dev2.hookandloop.com/customize-hook-and-loop-strap/']",
+        strap_lengthinput:"//input[@type='number']",
+        QuantityStaps:"//input[@inputmode='numeric']", 
+        Applybtn:"//button[@title='Apply']",
+        strapaddtocart:"//span[text()='Add to cart']",
 
        
 
@@ -134,7 +139,22 @@ export default class AutomationEXPage {
         const ele = this.page.locator(this.AutomationEx_page_elements.AddToCartbtn)
 
         try {
+            await ele.isVisible()
+            await this.page.waitForTimeout(300)
             await ele.click()
+
+
+        } catch (error) {
+            throw new Error('Unable to find the Add To Cart Button Element from the PDP |  Error occured: ' + error)
+        }
+    }
+    async strapAddToCartBTN_click() {
+        const ele = this.page.locator(this.AutomationEx_page_elements.strapaddtocart)
+
+        try {
+            await ele.isVisible()
+            await this.page.waitForTimeout(300)
+            await ele.click({force:true,delay:100})
 
 
         } catch (error) {
@@ -770,6 +790,70 @@ async scrollPage(page: Page, direction: 'down' | 'up') {
       });
     }, distance);
   }
+  async wait(){
+    await this.page.waitForLoadState();
+  }
+  async strapsClick() {
+    const ele = this.page.locator(this.AutomationEx_page_elements.straps).first()
+
+    try {
+        // await this.page.waitForTimeout(6000)
+        await ele.isVisible()
+        // await this.page.waitForTimeout(3000)
+        await ele.click({button:"left",force:true,delay:100})
+        await this.page.waitForTimeout(6000)
+
+
+    } catch (error) {
+        throw new Error('Unable to find the straps Element from the checkout |  Error occured: ' + error)
+    }
+}
+async strapslenInput() {
+    const ele = this.page.locator(this.AutomationEx_page_elements.strap_lengthinput)
+
+    try {
+        // await this.page.waitForTimeout(6000)
+        await ele.isVisible()
+        // await this.page.waitForTimeout(3000)
+        await ele.fill("10")
+        await this.page.waitForTimeout(6000)
+
+
+    } catch (error) {
+        throw new Error('Unable to find the straps length input Element from the checkout |  Error occured: ' + error)
+    }
+}
+async strapsquanInput() {
+    const ele = this.page.locator(this.AutomationEx_page_elements.QuantityStaps)
+
+    try {
+        // await this.page.waitForTimeout(6000)
+        await ele.isVisible()
+        // await this.page.waitForTimeout(3000)
+        await ele.fill("30")
+        await this.page.waitForTimeout(6000)
+
+
+    } catch (error) {
+        throw new Error('Unable to find the straps length input Element from the checkout |  Error occured: ' + error)
+    }
+}
+async strapapplyclick() {
+    const ele = this.page.locator(this.AutomationEx_page_elements.Applybtn)
+
+    try {
+        // await this.page.waitForTimeout(6000)
+        await ele.isVisible()
+        // await this.page.waitForTimeout(3000)
+        await ele.click({force:true,delay:100})
+        await this.page.waitForTimeout(1000)
+       
+
+
+    } catch (error) {
+        throw new Error('Unable to find the straps length input Element from the checkout |  Error occured: ' + error)
+    }
+}
 
 }
 
