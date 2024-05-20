@@ -61,7 +61,17 @@ export default class AutomationEXPage {
         QuantityStaps:"//input[@inputmode='numeric']", 
         Applybtn:"//button[@title='Apply']",
         strapaddtocart:"//span[text()='Add to cart']",
-
+        goToShopping:"//button[@title='Go to Shopping Cart']",
+        proccedTochkout:"//span[text()='Proceed to Checkout']",
+        paypalmethod:"//input[@value='paypal_express']",
+        continueTopayPal:"//span[text()='Continue to PayPal']",
+        PaypalEmail:"//input[@placeholder='E-Mail-Adresse oder Handynummer']",
+        paypalPass:"//input[@placeholder='Passwort']",
+        PaypalContbtn:"//button[text()='Einloggen']",
+        completePurchase:"//button[text()='Complete Purchase']",
+        wideLoop:"//dd[@class='brands odd']//li[5]",
+        flameWideloop:"(//img[@class='product-image-photo lazyloaded'])[1]",
+        wideLoopAddtoCart:"//button[@id='product-addtocart-button']",
        
 
 
@@ -148,13 +158,26 @@ export default class AutomationEXPage {
             throw new Error('Unable to find the Add To Cart Button Element from the PDP |  Error occured: ' + error)
         }
     }
+    async WideLoopAddToCartBTN_click() {
+        const ele = this.page.locator(this.AutomationEx_page_elements.wideLoopAddtoCart)
+
+        try {
+            await ele.isVisible()
+            // await this.page.waitForTimeout(300)
+            await ele.click()
+
+
+        } catch (error) {
+            throw new Error('Unable to find the Add To Cart Button Element from the PDP |  Error occured: ' + error)
+        }
+    }
     async strapAddToCartBTN_click() {
         const ele = this.page.locator(this.AutomationEx_page_elements.strapaddtocart)
 
         try {
             await ele.isVisible()
             await this.page.waitForTimeout(300)
-            await ele.click({force:true,delay:100})
+            await ele.click()
 
 
         } catch (error) {
@@ -163,6 +186,30 @@ export default class AutomationEXPage {
     }
     async ChkOutBTN_click() {
         const ele = this.page.locator(this.AutomationEx_page_elements.Checkout)
+
+        try {
+            await this.page.waitForTimeout(3000)
+            await ele.click()
+
+
+        } catch (error) {
+            throw new Error('Unable to find the Add To Checkout Button Element from the PDP |  Error occured: ' + error)
+        }
+    }
+    async gotoshopping_click() {
+        const ele = this.page.locator(this.AutomationEx_page_elements.goToShopping)
+
+        try {
+            await this.page.waitForTimeout(3000)
+            await ele.click()
+
+
+        } catch (error) {
+            throw new Error('Unable to find the Add To Checkout Button Element from the PDP |  Error occured: ' + error)
+        }
+    }
+    async procceedTochkout_click() {
+        const ele = this.page.locator(this.AutomationEx_page_elements.proccedTochkout)
 
         try {
             await this.page.waitForTimeout(3000)
@@ -790,8 +837,16 @@ async scrollPage(page: Page, direction: 'down' | 'up') {
       });
     }, distance);
   }
-  async wait(){
-    await this.page.waitForLoadState();
+
+  async wait() {
+    console.log("in wait!!!")
+    await this.page.waitForFunction(() => {
+        return window.jQuery !== undefined;
+    });
+    console.log('jQuery is loaded and ready to use.');
+    await this.page.waitForLoadState("domcontentloaded");
+    console.log('domcontentloaded!!!');
+    
   }
   async strapsClick() {
     const ele = this.page.locator(this.AutomationEx_page_elements.straps).first()
@@ -845,7 +900,7 @@ async strapapplyclick() {
         // await this.page.waitForTimeout(6000)
         await ele.isVisible()
         // await this.page.waitForTimeout(3000)
-        await ele.click({force:true,delay:100})
+        await ele.click()
         await this.page.waitForTimeout(1000)
        
 
@@ -854,6 +909,104 @@ async strapapplyclick() {
         throw new Error('Unable to find the straps length input Element from the checkout |  Error occured: ' + error)
     }
 }
+async PaypalBTN_click() {
+    const ele = this.page.locator(this.AutomationEx_page_elements.paypalmethod)
+
+    try {
+        await ele.isVisible()
+        await this.page.waitForTimeout(300)
+        await ele.click()
+
+
+    } catch (error) {
+        throw new Error('Unable to find the paypal Button Element from the PDP |  Error occured: ' + error)
+    }
+}
+async ContinueTopaypal_click() {
+    const ele = this.page.locator(this.AutomationEx_page_elements.continueTopayPal)
+
+    try {
+        
+        await ele.click()
+
+
+    } catch (error) {
+        throw new Error('Unable to find the Add To Checkout Button Element from the PDP |  Error occured: ' + error)
+    }
+}
+async paypalEmail_input() {
+    const ele = this.page.locator(this.AutomationEx_page_elements.PaypalEmail)
+
+    try {
+        await ele.clear()
+        await ele.fill("sb-sbwqj25024209@personal.example.com")
+
+
+    } catch (error) {
+        throw new Error('Unable to find the Add To Checkout Button Element from the PDP |  Error occured: ' + error)
+    }
+}
+async paypalpassword_input() {
+    const ele = this.page.locator(this.AutomationEx_page_elements.paypalPass)
+
+    try {
+        
+        await ele.fill("2t-OI-O(")
+
+
+    } catch (error) {
+        throw new Error('Unable to find the Add To Checkout Button Element from the PDP |  Error occured: ' + error)
+    }
+}
+async paypalcontinue() {
+    const ele = this.page.locator(this.AutomationEx_page_elements.PaypalContbtn)
+
+    try {
+        
+        await ele.click()
+
+
+    } catch (error) {
+        throw new Error('Unable to find the Add To Checkout Button Element from the PDP |  Error occured: ' + error)
+    }
+}
+async completepurchase() {
+    const ele = this.page.locator(this.AutomationEx_page_elements.completePurchase)
+
+    try {
+        
+        await ele.click()
+
+
+    } catch (error) {
+        throw new Error('Unable to find the complete purchase Button Element from the PDP |  Error occured: ' + error)
+    }
+}
+async wideLoopClick() {
+    const ele = this.page.locator(this.AutomationEx_page_elements.wideLoop)
+
+    try {
+        
+        await ele.click()
+
+
+    } catch (error) {
+        throw new Error('Unable to find the wide loop Button Element from the PDP |  Error occured: ' + error)
+    }
+}
+async flamewideLoopClick() {
+    const ele = this.page.locator(this.AutomationEx_page_elements.flameWideloop)
+
+    try {
+        
+        await ele.click()
+
+
+    } catch (error) {
+        throw new Error('Unable to find the flame wide loop card Element from the PDP |  Error occured: ' + error)
+    }
+}
+
 
 }
 

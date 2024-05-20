@@ -60,7 +60,7 @@
       "line": 0,
       "specs": [
         {
-          "title": "010 | Verify The duragrip Brand's straps products chcekout functionalities are working fine",
+          "title": "011 | Verify The duragrip Brand's wide loop products chcekout functionalities are working fine",
           "ok": false,
           "tags": [],
           "tests": [
@@ -74,80 +74,137 @@
                 {
                   "workerIndex": 0,
                   "status": "failed",
-                  "duration": 101365,
+                  "duration": 262563,
                   "error": {
-                    "message": "Unable to find the Add To Checkout Button Element from the PDP |  Error occured: TimeoutError: locator.click: Timeout 60000ms exceeded.\n=========================== logs ===========================\nwaiting for locator('xpath=//span[text()=\\'Checkout\\']')\n============================================================",
-                    "stack": "Error: Unable to find the Add To Checkout Button Element from the PDP |  Error occured: TimeoutError: locator.click: Timeout 60000ms exceeded.\n=========================== logs ===========================\nwaiting for locator('xpath=//span[text()=\\'Checkout\\']')\n============================================================\n    at AutomationEXPage.ChkOutBTN_click (C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\pages\\AutomationExPage\\HookAndloop.page.ts:173:19)\n    at C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\tests\\Automation Exercise\\AutomationEx.test.ts:792:5\n    at C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\tests\\Automation Exercise\\AutomationEx.test.ts:790:5"
+                    "message": "Unable to find the paypal Button Element from the PDP |  Error occured: TimeoutError: locator.click: Timeout 60000ms exceeded.\n=========================== logs ===========================\nwaiting for locator('xpath=//input[@value=\\'paypal_express\\']')\n============================================================",
+                    "stack": "Error: Unable to find the paypal Button Element from the PDP |  Error occured: TimeoutError: locator.click: Timeout 60000ms exceeded.\n=========================== logs ===========================\nwaiting for locator('xpath=//input[@value=\\'paypal_express\\']')\n============================================================\n    at AutomationEXPage.PaypalBTN_click (C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\pages\\AutomationExPage\\HookAndloop.page.ts:922:15)\n    at C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\tests\\Automation Exercise\\AutomationEx.test.ts:987:5\n    at C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\tests\\Automation Exercise\\AutomationEx.test.ts:985:5"
                   },
                   "errors": [
                     {
                       "location": {
                         "file": "C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\pages\\AutomationExPage\\HookAndloop.page.ts",
-                        "column": 19,
-                        "line": 173
+                        "column": 15,
+                        "line": 922
                       },
-                      "message": "Error: Unable to find the Add To Checkout Button Element from the PDP |  Error occured: TimeoutError: locator.click: Timeout 60000ms exceeded.\n=========================== logs ===========================\nwaiting for locator('xpath=//span[text()=\\'Checkout\\']')\n============================================================\n\n\u001b[90m   at \u001b[39mpages\\AutomationExPage\\HookAndloop.page.ts:173\n\n\u001b[0m \u001b[90m 171 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 172 |\u001b[39m         } \u001b[36mcatch\u001b[39m (error) {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 173 |\u001b[39m             \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'Unable to find the Add To Checkout Button Element from the PDP |  Error occured: '\u001b[39m \u001b[33m+\u001b[39m error)\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 174 |\u001b[39m         }\u001b[0m\n\u001b[0m \u001b[90m 175 |\u001b[39m     }\u001b[0m\n\u001b[0m \u001b[90m 176 |\u001b[39m     \u001b[36masync\u001b[39m \u001b[33mEmail_input\u001b[39m() {\u001b[0m\n\n\u001b[2m    at AutomationEXPage.ChkOutBTN_click (C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\pages\\AutomationExPage\\HookAndloop.page.ts:173:19)\u001b[22m\n\u001b[2m    at C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\tests\\Automation Exercise\\AutomationEx.test.ts:792:5\u001b[22m\n\u001b[2m    at C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\tests\\Automation Exercise\\AutomationEx.test.ts:790:5\u001b[22m"
+                      "message": "Error: Unable to find the paypal Button Element from the PDP |  Error occured: TimeoutError: locator.click: Timeout 60000ms exceeded.\n=========================== logs ===========================\nwaiting for locator('xpath=//input[@value=\\'paypal_express\\']')\n============================================================\n\n\u001b[90m   at \u001b[39mpages\\AutomationExPage\\HookAndloop.page.ts:922\n\n\u001b[0m \u001b[90m 920 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 921 |\u001b[39m     } \u001b[36mcatch\u001b[39m (error) {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 922 |\u001b[39m         \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'Unable to find the paypal Button Element from the PDP |  Error occured: '\u001b[39m \u001b[33m+\u001b[39m error)\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 923 |\u001b[39m     }\u001b[0m\n\u001b[0m \u001b[90m 924 |\u001b[39m }\u001b[0m\n\u001b[0m \u001b[90m 925 |\u001b[39m \u001b[36masync\u001b[39m \u001b[33mContinueTopaypal_click\u001b[39m() {\u001b[0m\n\n\u001b[2m    at AutomationEXPage.PaypalBTN_click (C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\pages\\AutomationExPage\\HookAndloop.page.ts:922:15)\u001b[22m\n\u001b[2m    at C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\tests\\Automation Exercise\\AutomationEx.test.ts:987:5\u001b[22m\n\u001b[2m    at C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\tests\\Automation Exercise\\AutomationEx.test.ts:985:5\u001b[22m"
                     }
                   ],
-                  "stdout": [],
+                  "stdout": [
+                    {
+                      "text": "in wait!!!\n"
+                    },
+                    {
+                      "text": "jQuery is loaded and ready to use.\n"
+                    },
+                    {
+                      "text": "domcontentloaded!!!\n"
+                    },
+                    {
+                      "text": "Magento_Ui buttons loaded\n"
+                    }
+                  ],
                   "stderr": [],
                   "retry": 0,
                   "steps": [
                     {
                       "title": "Navigate to the Url",
-                      "duration": 2574
+                      "duration": 3280
                     },
                     {
                       "title": "Click on the brands from the nav bar",
-                      "duration": 1321
+                      "duration": 4887
                     },
                     {
-                      "title": "Click on the DuraGrip Sew On product",
-                      "duration": 12235
-                    },
-                    {
-                      "title": "Click on the Width option of the product",
-                      "duration": 16445
+                      "title": "Click on the DuraGrip wide loop product",
+                      "duration": 2187
                     },
                     {
                       "title": "Click on the Add to cart button",
-                      "duration": 803
+                      "duration": 49830
                     },
                     {
                       "title": "Click on the Checkout button",
-                      "duration": 66025,
+                      "duration": 17392
+                    },
+                    {
+                      "title": "Fill the email input field",
+                      "duration": 25963
+                    },
+                    {
+                      "title": "Fill the First Name input field",
+                      "duration": 6259
+                    },
+                    {
+                      "title": "Fill the Last Name input field",
+                      "duration": 6272
+                    },
+                    {
+                      "title": "Fill the Address input field",
+                      "duration": 6242
+                    },
+                    {
+                      "title": "Select the Country",
+                      "duration": 3103
+                    },
+                    {
+                      "title": "Select the state",
+                      "duration": 3062
+                    },
+                    {
+                      "title": "Fill the city input field",
+                      "duration": 12278
+                    },
+                    {
+                      "title": "Fill the Zip input field",
+                      "duration": 12284
+                    },
+                    {
+                      "title": "Fill the phone input field",
+                      "duration": 12300
+                    },
+                    {
+                      "title": "Priority Mall Click",
+                      "duration": 12788
+                    },
+                    {
+                      "title": "Next Button Click",
+                      "duration": 12662
+                    },
+                    {
+                      "title": "Paypal method click",
+                      "duration": 63374,
                       "error": {
-                        "message": "Unable to find the Add To Checkout Button Element from the PDP |  Error occured: TimeoutError: locator.click: Timeout 60000ms exceeded.\n=========================== logs ===========================\nwaiting for locator('xpath=//span[text()=\\'Checkout\\']')\n============================================================",
-                        "stack": "Error: Unable to find the Add To Checkout Button Element from the PDP |  Error occured: TimeoutError: locator.click: Timeout 60000ms exceeded.\n=========================== logs ===========================\nwaiting for locator('xpath=//span[text()=\\'Checkout\\']')\n============================================================\n    at AutomationEXPage.ChkOutBTN_click (C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\pages\\AutomationExPage\\HookAndloop.page.ts:173:19)\n    at C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\tests\\Automation Exercise\\AutomationEx.test.ts:792:5\n    at C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\tests\\Automation Exercise\\AutomationEx.test.ts:790:5"
+                        "message": "Unable to find the paypal Button Element from the PDP |  Error occured: TimeoutError: locator.click: Timeout 60000ms exceeded.\n=========================== logs ===========================\nwaiting for locator('xpath=//input[@value=\\'paypal_express\\']')\n============================================================",
+                        "stack": "Error: Unable to find the paypal Button Element from the PDP |  Error occured: TimeoutError: locator.click: Timeout 60000ms exceeded.\n=========================== logs ===========================\nwaiting for locator('xpath=//input[@value=\\'paypal_express\\']')\n============================================================\n    at AutomationEXPage.PaypalBTN_click (C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\pages\\AutomationExPage\\HookAndloop.page.ts:922:15)\n    at C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\tests\\Automation Exercise\\AutomationEx.test.ts:987:5\n    at C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\tests\\Automation Exercise\\AutomationEx.test.ts:985:5"
                       }
                     }
                   ],
-                  "startTime": "2024-05-16T10:40:56.839Z",
+                  "startTime": "2024-05-20T13:41:28.836Z",
                   "attachments": [
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\test-results\\tests-Automation Exercise-AutomationEx-010-Ver-85e07-ducts-chcekout-functionalities-are-working-fine-chromium\\video.webm"
+                      "path": "C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\test-results\\tests-Automation Exercise-AutomationEx-011-Ver-aa640-ducts-chcekout-functionalities-are-working-fine-chromium\\video.webm"
                     },
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\test-results\\tests-Automation Exercise-AutomationEx-010-Ver-85e07-ducts-chcekout-functionalities-are-working-fine-chromium\\test-failed-1.png"
+                      "path": "C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\test-results\\tests-Automation Exercise-AutomationEx-011-Ver-aa640-ducts-chcekout-functionalities-are-working-fine-chromium\\test-failed-1.png"
                     }
                   ],
                   "errorLocation": {
                     "file": "C:\\Users\\munna\\Documents\\GitHub\\Automation-ExerciseForKinetik\\pages\\AutomationExPage\\HookAndloop.page.ts",
-                    "column": 19,
-                    "line": 173
+                    "column": 15,
+                    "line": 922
                   }
                 }
               ],
               "status": "unexpected"
             }
           ],
-          "id": "3b24793047643fa43483-26797ecba5ae16b0c454",
+          "id": "3b24793047643fa43483-c872d2c23b711d262072",
           "file": "tests/Automation Exercise/AutomationEx.test.ts",
-          "line": 761,
+          "line": 894,
           "column": 6
         }
       ]

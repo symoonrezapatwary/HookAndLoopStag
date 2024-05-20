@@ -758,7 +758,7 @@ await page.waitForTimeout(6000);
 })
 
 })
-test.only("010 | Verify The duragrip Brand's straps products chcekout functionalities are working fine", async ({ page, AutomationExPage }) => {
+test("010 | Verify The duragrip Brand's straps products chcekout functionalities are working fine", async ({ page, AutomationExPage }) => {
 
     await test.step('Navigate to the Url', async () => {
     await page.goto('https://dev2.hookandloop.com/')
@@ -779,8 +779,21 @@ test.only("010 | Verify The duragrip Brand's straps products chcekout functional
     await AutomationExPage.strapsquanInput()
     await AutomationExPage.strapapplyclick()
     await AutomationExPage.wait()
-    
-    })
+    // await page.keyboard.press('F12');
+    // await page.waitForSelector('[aria-label="Network panel"]');
+    // await page.click('[aria-label="Network panel"]');
+    // await AutomationExPage.strapapplyclick()
+    // await page.waitForTimeout(2000);
+    // const networkRequests = await page.evaluate(() => {
+    //     const requests = performance.getEntries();
+    //     return requests.map(request => request.name);
+    //   });
+    //   if (networkRequests.length > 0) {
+    //     console.log('Button initiated network request(s):', networkRequests);
+    //   } else {
+    //     console.log('Button did not initiate any network requests.');
+    //   }
+     })
     await test.step('Click on the Add to cart button', async () => {
         await page.waitForSelector("//span[text()='Add to cart']")
     
@@ -788,27 +801,29 @@ test.only("010 | Verify The duragrip Brand's straps products chcekout functional
     
     })
     await test.step('Click on the Checkout button', async () => {
-    await page.waitForTimeout(3000);
-    await AutomationExPage.ChkOutBTN_click();
+    await AutomationExPage.gotoshopping_click();
+    await AutomationExPage.wait()
+    await AutomationExPage.procceedTochkout_click();
+    await AutomationExPage.wait()
     
     })
     await test.step('Fill the email input field', async () => {
-    await page.waitForTimeout(3000);
+
     await AutomationExPage.Email_input();
     
     })
     await test.step('Fill the First Name input field', async () => {
-    await page.waitForTimeout(3000);
+    
     await AutomationExPage.FirstName_input()
     
     })
     await test.step('Fill the Last Name input field', async () => {
-    await page.waitForTimeout(3000);
+    
     await AutomationExPage.LastName_input()
     
     })
     await test.step('Fill the Address input field', async () => {
-    await page.waitForTimeout(3000);
+    
     await AutomationExPage.Address_input()
     
     })
@@ -853,45 +868,20 @@ test.only("010 | Verify The duragrip Brand's straps products chcekout functional
     
     
     })
-    await test.step('Card Number Input', async () => {
+    await test.step('Paypal method click', async () => {
     await page.waitForTimeout(3000);
-    await AutomationExPage.Card_input()
-    
-    
+    await AutomationExPage.PaypalBTN_click();
     })
-    await test.step('Month Selection', async () => {
-    await page.waitForTimeout(3000);
-    await AutomationExPage.Handlemonthdropdown()
-    await page.waitForTimeout(3000);
+    await test.step('Paypal payment', async () => {
+    await AutomationExPage.ContinueTopaypal_click()
+    await AutomationExPage.paypalEmail_input()
+    await AutomationExPage.paypalpassword_input()
+    await AutomationExPage.paypalcontinue()
+    await AutomationExPage.completepurchase()
+    await page.waitForTimeout(20000)
     
-    
-    })
-    
-    
-    
-    await test.step('Year Selection', async () => {
-    await page.waitForTimeout(3000);
-    await AutomationExPage.Handleyeardropdown()
-    await page.waitForTimeout(3000);
-    
-    
-    })
-    await test.step('CvC Input', async () => {
-    await page.waitForTimeout(3000);
-    await AutomationExPage.Cvc_input()
-    await page.waitForTimeout(6000);
-    
-    
-    })
-    
-    await test.step('Click on the place order button', async () => {
-    await page.waitForTimeout(3000);
-    await AutomationExPage.PLace_click()
-    await page.waitForTimeout(6000);
-    
-    
-    })
-    await test.step('Validate the order has been placed successfully', async () => {
+})
+await test.step('Validate the order has been placed successfully', async () => {
     await page.waitForTimeout(3000);
     await AutomationExPage.URLValid()
     await page.waitForTimeout(6000);
@@ -900,8 +890,121 @@ test.only("010 | Verify The duragrip Brand's straps products chcekout functional
     
     
     })
+})
+test.only("011 | Verify The duragrip Brand's wide loop products chcekout functionalities are working fine", async ({ page, AutomationExPage }) => {
+
+    await test.step('Navigate to the Url', async () => {
+    await page.goto('https://dev2.hookandloop.com/')
     
     })
+    await test.step('Click on the brands from the nav bar', async () => {
+    await AutomationExPage.Bands_click();
+    })
+    
+    await test.step('Click on the DuraGrip wide loop product', async () => {
+    await AutomationExPage.wideLoopClick()
+    // await AutomationExPage.wait()
+    await AutomationExPage.flamewideLoopClick()
+    
+    })
+   
+    await test.step('Click on the Add to cart button', async () => {
+        await AutomationExPage.wait()
+        const addToCartScript = await page.waitForResponse('https://dev2.hookandloop.com/static/version1716191954/frontend/Raveinfosys/hookandloop/en_US/Magento_Ui/js/form/adapter/buttons.js');
+        console.log("Magento_Ui buttons loaded")
+        // await page.waitForTimeout(3000);
+        await AutomationExPage.WideLoopAddToCartBTN_click();
+    })
+    await test.step('Click on the Checkout button', async () => {
+        await page.waitForTimeout(3000);
+        await AutomationExPage.ChkOutBTN_click();
+        
+        })
+    await test.step('Fill the email input field', async () => {
+        await page.waitForTimeout(10000);
+
+    await AutomationExPage.Email_input();
+    
+    })
+    await test.step('Fill the First Name input field', async () => {
+    
+    await AutomationExPage.FirstName_input()
+    
+    })
+    await test.step('Fill the Last Name input field', async () => {
+    
+    await AutomationExPage.LastName_input()
+    
+    })
+    await test.step('Fill the Address input field', async () => {
+    
+    await AutomationExPage.Address_input()
+    
+    })
+    await test.step('Select the Country', async () => {
+    await page.waitForTimeout(3000);
+    await AutomationExPage.countrydropdown()
+    
+    })
+    await test.step('Select the state', async () => {
+    await page.waitForTimeout(3000);
+    await AutomationExPage.Handlestatedropdown()
+    
+    })
+    await test.step('Fill the city input field', async () => {
+    await page.waitForTimeout(3000);
+    await AutomationExPage.City_input()
+    
+    
+    })
+    await test.step('Fill the Zip input field', async () => {
+    await page.waitForTimeout(3000);
+    await AutomationExPage.Zip_input()
+    
+    
+    })
+    
+    await test.step('Fill the phone input field', async () => {
+    await page.waitForTimeout(3000);
+    await AutomationExPage.Phone_input()
+    
+    
+    })
+    await test.step('Priority Mall Click', async () => {
+    await page.waitForTimeout(3000);
+    await AutomationExPage.PriorityMAll_Click()
+    
+    
+    })
+    await test.step('Next Button Click', async () => {
+    await page.waitForTimeout(3000);
+    await AutomationExPage.NextBTN_Click()
+    
+    
+    })
+    await test.step('Paypal method click', async () => {
+    await page.waitForTimeout(3000);
+    await AutomationExPage.PaypalBTN_click();
+    })
+    await test.step('Paypal payment', async () => {
+    await AutomationExPage.ContinueTopaypal_click()
+    await AutomationExPage.paypalEmail_input()
+    await AutomationExPage.paypalpassword_input()
+    await AutomationExPage.paypalcontinue()
+    await AutomationExPage.completepurchase()
+    await page.waitForTimeout(20000)
+    
+})
+await test.step('Validate the order has been placed successfully', async () => {
+    await page.waitForTimeout(3000);
+    await AutomationExPage.URLValid()
+    await page.waitForTimeout(6000);
+    // await AutomationExPage.OrderSuccess()
+    // await page.waitForTimeout(6000);
+    
+    
+    })
+})
 test.describe('Mobile Viewport Tests', () => {
 test("006 | Verify The duragrip Brand's Coin products chcekout functionalities are working fineon mobile", async ({ page, AutomationExPage, NAvigationPage }) => {
 
@@ -1548,4 +1651,3 @@ await AutomationExPage.URLValid()
 
 })
 })
-
