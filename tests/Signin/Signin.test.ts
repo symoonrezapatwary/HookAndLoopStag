@@ -3,68 +3,70 @@ import test from "@fixtures/basePages"
 import { devices } from "@playwright/test";
 
 
-test("001 | Verify The Event Tickets chcekout functionalities are working fine", async ({ page, AutomationExPage }) => {
+test("001 | Verify The Event Tickets chcekout functionalities are working fine", async ({ page, SigninPage, }) => {
     await test.step('Navigate to the Url', async () => {
-        await page.goto('https://britishgymnastics-sandbox-development.justgo.com/Account.mvc/SignIn')
+        await page.goto('http://justgo-mvc5.justgo.com/')
 
     })
     await test.step('Username Input', async () => {
-        await AutomationExPage.userNameinput()
+        await SigninPage.userNameinput()
 
     })
     await test.step('Password Input', async () => {
-        await AutomationExPage.passwordInput()
+        await SigninPage.passwordInput()
 
     })
     await test.step('Log In Button Click', async () => {
-        await AutomationExPage.loginClick()
+        await SigninPage.loginClick()
 
     })
     await test.step('Log In Validation', async () => {
-        await AutomationExPage.loginValidation()
+        await SigninPage.loginValidation()
        
 
     })
     await test.step('evnt and courses click', async () => {
-        await AutomationExPage.eventnavClick()
+        await SigninPage.eventnavClick()
         
         
 
     })
     await test.step('eventclick', async () => {
         
-        await AutomationExPage.eventClick()
+        await SigninPage.eventClick()
         
         
 
     })
     await test.step('Member ticket Add', async () => {
         
-        await AutomationExPage.TickaddClick()
-        await AutomationExPage.TickincreaserClick()
+        await SigninPage.TickaddClick()
+        await SigninPage.TickincreaserClick()
         
         
 
     })
     await test.step('Verify the checkout functionalities', async () => {
         
-        await AutomationExPage.ProcceedTochkoutClick()
-        await AutomationExPage.chkoutClick()
+        await SigninPage.ProcceedTochkoutClick()
+        await SigninPage.chkoutClick()
         await page.waitForLoadState()
         
 
     })
     await test.step('Verify the Payment functionalities', async () => {
         
-        await AutomationExPage.AdminPayClick()
-        await AutomationExPage.ProcceedClick()
+        await SigninPage.AdminPayClick()
+        await SigninPage.ProcceedClick()
         await page.waitForLoadState()
+        await page.waitForTimeout(6000)
         
 
     })
     await test.step('Validate payment Successful', async () => {
         
-        await AutomationExPage.PaymentSuccess()
+        await SigninPage.PaymentSuccess()
+        await page.waitForTimeout(3000)
         
 
     })

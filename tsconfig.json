@@ -13,8 +13,8 @@
             "paths": {
                 "@pages/*": [
                    
-                    "pages/AutomationExPage/*",
-                    "pages/NavigationBAR/*"
+                    "pages/Signin/Signin.page.ts",
+                    
                     
 
                     

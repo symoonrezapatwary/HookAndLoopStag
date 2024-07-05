@@ -3,7 +3,7 @@ import { expect, Page } from "@playwright/test";
 
 
 
-export default class AutomationEXPage {
+export default class SigninPage {
     private page: Page;
     
     // static login: any;
@@ -22,6 +22,8 @@ export default class AutomationEXPage {
         eventandCorses:"//a[@title='Events & Courses']",
         TestSymoonevnt:"//img[@alt='Test Event Symoon']",
         AddMember:"(//div[contains(@class,'flex w-full')]//a)[2]",
+        memselection:"(//input[@type='checkbox'])[1]",
+        Addtick:"(//span[@class='jg-btn-icon'])[2]",
         Tickincreaser:"(//button[contains(@class,'button-plus rounded-r')])[1]",
         ProcceedTochkoutBTN:"//span[text()='Proceed to checkout']",
         checkout:"//button[text()='Proceed to checkout']",
@@ -38,6 +40,7 @@ export default class AutomationEXPage {
         try {
             await this.page.waitForTimeout(5000)
             await ele.fill("admin")
+            
             
 
 
@@ -114,6 +117,34 @@ export default class AutomationEXPage {
     }
     async TickaddClick() {
         const ele = this.page.frameLocator('iframe').locator(this.AutomationEx_page_elements.AddMember)
+
+        try {
+            
+            await ele.click()
+            
+            
+
+
+        } catch (error) {
+            throw new Error('Unable to find the ticket add button |  Error occured: ' + error)
+        }
+    }
+    async Tickadd() {
+        const ele = this.page.frameLocator('iframe').locator(this.AutomationEx_page_elements.Addtick)
+
+        try {
+            
+            await ele.click()
+            
+            
+
+
+        } catch (error) {
+            throw new Error('Unable to find the ticket add button |  Error occured: ' + error)
+        }
+    }
+    async memberSelection() {
+        const ele = this.page.frameLocator('iframe').locator(this.AutomationEx_page_elements.memselection)
 
         try {
             
@@ -213,6 +244,10 @@ export default class AutomationEXPage {
     }
 
 
+        
+
+        
+       
 }
 
 
@@ -226,32 +261,10 @@ export default class AutomationEXPage {
 
 
 
-    // private async generateRandomEmail() {
-    //     const characters = 'abcdefghijklmnopqrstuvwxyz0123456789';
-    //     let email = '';
-    //     for (let i = 0; i < 10; i++) {
-    //         email += characters.charAt(Math.floor(Math.random() * characters.length));
-    //     }
-    //     email += '@example.com';
-    //     return email;
-    // }
-
-    // //Email input for sign up
-    // async Email_Input() {
-    //     const email = await this.generateRandomEmail();
-    //     const ele= this.page.locator(this.AutomationEx_page_elements.EmailINput)
-       
-
-    //     try {
-            
-    //         // await this.page.fill("//input[@data-qa='signup-email']", email)
-    //         await ele.fill(email)
-           
 
 
-    //     } catch (error) {
-    //         throw new Error('Unable to find Email input element |  Error occured: ' + error)
-    //     }
+
+
 
   
     

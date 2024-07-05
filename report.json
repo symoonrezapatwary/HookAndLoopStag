@@ -20,7 +20,7 @@
         "testDir": "C:/Users/SymoonReza/Documents/GitHub/JustGoEvent",
         "testIgnore": [],
         "testMatch": [
-          "AutomationEx.test.ts"
+          "Signin.test.ts"
         ],
         "timeout": 400000
       }
@@ -54,14 +54,14 @@
   },
   "suites": [
     {
-      "title": "tests\\Automation Exercise\\AutomationEx.test.ts",
-      "file": "tests/Automation Exercise/AutomationEx.test.ts",
+      "title": "tests\\Signin\\Signin.test.ts",
+      "file": "tests/Signin/Signin.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
           "title": "001 | Verify The Event Tickets chcekout functionalities are working fine",
-          "ok": true,
+          "ok": false,
           "tags": [],
           "tests": [
             {
@@ -73,28 +73,41 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 44822,
-                  "errors": [],
+                  "status": "failed",
+                  "duration": 83357,
+                  "error": {
+                    "message": "Unable to find Event and courses button |  Error occured: TimeoutError: locator.click: Timeout 60000ms exceeded.\n=========================== logs ===========================\nwaiting for locator('xpath=//a[@title=\\'Events & Courses\\']')\n============================================================",
+                    "stack": "Error: Unable to find Event and courses button |  Error occured: TimeoutError: locator.click: Timeout 60000ms exceeded.\n=========================== logs ===========================\nwaiting for locator('xpath=//a[@title=\\'Events & Courses\\']')\n============================================================\n    at SigninPage.eventnavClick (C:\\Users\\SymoonReza\\Documents\\GitHub\\JustGoEvent\\pages\\Signin\\Signin.page.ts:99:19)\n    at C:\\Users\\SymoonReza\\Documents\\GitHub\\JustGoEvent\\tests\\Signin\\Signin.test.ts:29:9\n    at C:\\Users\\SymoonReza\\Documents\\GitHub\\JustGoEvent\\tests\\Signin\\Signin.test.ts:28:5"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\SymoonReza\\Documents\\GitHub\\JustGoEvent\\pages\\Signin\\Signin.page.ts",
+                        "column": 19,
+                        "line": 99
+                      },
+                      "message": "Error: Unable to find Event and courses button |  Error occured: TimeoutError: locator.click: Timeout 60000ms exceeded.\n=========================== logs ===========================\nwaiting for locator('xpath=//a[@title=\\'Events & Courses\\']')\n============================================================\n\n\u001b[90m   at \u001b[39mpages\\Signin\\Signin.page.ts:99\n\n\u001b[0m \u001b[90m  97 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  98 |\u001b[39m         } \u001b[36mcatch\u001b[39m (error) {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  99 |\u001b[39m             \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'Unable to find Event and courses button |  Error occured: '\u001b[39m \u001b[33m+\u001b[39m error)\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 100 |\u001b[39m         }\u001b[0m\n\u001b[0m \u001b[90m 101 |\u001b[39m     }\u001b[0m\n\u001b[0m \u001b[90m 102 |\u001b[39m     \u001b[36masync\u001b[39m eventClick() {\u001b[0m\n\n\u001b[2m    at SigninPage.eventnavClick (C:\\Users\\SymoonReza\\Documents\\GitHub\\JustGoEvent\\pages\\Signin\\Signin.page.ts:99:19)\u001b[22m\n\u001b[2m    at C:\\Users\\SymoonReza\\Documents\\GitHub\\JustGoEvent\\tests\\Signin\\Signin.test.ts:29:9\u001b[22m\n\u001b[2m    at C:\\Users\\SymoonReza\\Documents\\GitHub\\JustGoEvent\\tests\\Signin\\Signin.test.ts:28:5\u001b[22m"
+                    }
+                  ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
                   "steps": [
                     {
                       "title": "Navigate to the Url",
-                      "duration": 3907
+                      "duration": 9328
                     },
                     {
                       "title": "Username Input",
-                      "duration": 5066
+                      "duration": 5069
                     },
                     {
                       "title": "Password Input",
-                      "duration": 5041
+                      "duration": 5034
                     },
                     {
                       "title": "Log In Button Click",
-                      "duration": 54
+                      "duration": 70
                     },
                     {
                       "title": "Log In Validation",
@@ -102,49 +115,38 @@
                     },
                     {
                       "title": "evnt and courses click",
-                      "duration": 11743
-                    },
-                    {
-                      "title": "eventclick",
-                      "duration": 2670
-                    },
-                    {
-                      "title": "Member ticket Add",
-                      "duration": 8177
-                    },
-                    {
-                      "title": "Verify the checkout functionalities",
-                      "duration": 1626
-                    },
-                    {
-                      "title": "Verify the Payment functionalities",
-                      "duration": 5837
-                    },
-                    {
-                      "title": "Validate payment Successful",
-                      "duration": 4
+                      "duration": 60015,
+                      "error": {
+                        "message": "Unable to find Event and courses button |  Error occured: TimeoutError: locator.click: Timeout 60000ms exceeded.\n=========================== logs ===========================\nwaiting for locator('xpath=//a[@title=\\'Events & Courses\\']')\n============================================================",
+                        "stack": "Error: Unable to find Event and courses button |  Error occured: TimeoutError: locator.click: Timeout 60000ms exceeded.\n=========================== logs ===========================\nwaiting for locator('xpath=//a[@title=\\'Events & Courses\\']')\n============================================================\n    at SigninPage.eventnavClick (C:\\Users\\SymoonReza\\Documents\\GitHub\\JustGoEvent\\pages\\Signin\\Signin.page.ts:99:19)\n    at C:\\Users\\SymoonReza\\Documents\\GitHub\\JustGoEvent\\tests\\Signin\\Signin.test.ts:29:9\n    at C:\\Users\\SymoonReza\\Documents\\GitHub\\JustGoEvent\\tests\\Signin\\Signin.test.ts:28:5"
+                      }
                     }
                   ],
-                  "startTime": "2024-06-13T12:51:04.322Z",
+                  "startTime": "2024-07-05T09:48:47.208Z",
                   "attachments": [
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\Users\\SymoonReza\\Documents\\GitHub\\JustGoEvent\\test-results\\tests-Automation Exercise-AutomationEx-001-Ver-8120e-ckets-chcekout-functionalities-are-working-fine-chromium\\video.webm"
+                      "path": "C:\\Users\\SymoonReza\\Documents\\GitHub\\JustGoEvent\\test-results\\tests-Signin-Signin-001-Verify-The-Event-Tickets-chcekout-functionalities-are-working-fine-chromium\\video.webm"
                     },
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\SymoonReza\\Documents\\GitHub\\JustGoEvent\\test-results\\tests-Automation Exercise-AutomationEx-001-Ver-8120e-ckets-chcekout-functionalities-are-working-fine-chromium\\test-finished-1.png"
+                      "path": "C:\\Users\\SymoonReza\\Documents\\GitHub\\JustGoEvent\\test-results\\tests-Signin-Signin-001-Verify-The-Event-Tickets-chcekout-functionalities-are-working-fine-chromium\\test-failed-1.png"
                     }
-                  ]
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\SymoonReza\\Documents\\GitHub\\JustGoEvent\\pages\\Signin\\Signin.page.ts",
+                    "column": 19,
+                    "line": 99
+                  }
                 }
               ],
-              "status": "expected"
+              "status": "unexpected"
             }
           ],
-          "id": "3b24793047643fa43483-d209869fc4eb08feb61e",
-          "file": "tests/Automation Exercise/AutomationEx.test.ts",
+          "id": "82baede84c6171922331-a291b06a5dcde6805e58",
+          "file": "tests/Signin/Signin.test.ts",
           "line": 6,
           "column": 5
         }

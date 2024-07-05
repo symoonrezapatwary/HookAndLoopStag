@@ -8,7 +8,7 @@ const config: PlaywrightTestConfig = {
   // testDir: './tests',
   testMatch: [
 
-    "AutomationEx.test.ts",
+    "Signin.test.ts",
     // "Navigation.test.mobile.ts",
     
 
